@@ -1,0 +1,113 @@
+.banner{
+	display: flex;
+	justify-content: space-around;
+ 	align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.4) ), image-url('carpacho.jpg');
+ 	background-size: cover;
+ 	height: 100vh;
+ 	text-align: center;
+}
+
+ .banner h1{
+ 	font-family: Roboto;
+ 	font-size: 58px;
+ 	text-align: center;
+ 	color: #FFFEFE;
+ 	text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9), 3px 3px 4px rgba(0, 0, 0, 0.25);
+}
+.banner h3{
+	font-family: Oswald;
+	font-size: 35px;
+	color: #E78B48;
+	margin-top: -7px;
+	margin-bottom: 88px;
+}
+.title-bold{
+	font-weight: bold;
+	
+}
+.title-light{
+	font-weight: lighter;
+}
+.btn-banner{
+	color: rgba(250, 250, 250, 0.9
+		);
+	font-family: Oswald;
+	font-size: 25px;
+	font-weight: ligher;
+	border: 1px solid #FFFBFB;
+	padding: 10px 37px;
+	margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.btn-banner:hover{
+	text-decoration: none;
+	background: rgba(231, 139, 72, 0.6);
+	color: #FFFEFE;
+}
+
+@media only screen 
+  and (max-width: 320px){
+	.banner{
+	    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.4) ), image-url('carpacho-mob.jpg');
+	}
+	.banner h1{
+		font-size: 22px;	
+	}
+	.banner h3{
+		font-size: 16px;
+		margin-top: -9px;
+		margin-bottom: 36px;
+	}
+	.btn-banner{
+		font-size: 15px;
+		padding: 7px 14px;
+		margin-left: 0px;
+    	margin-right: 0px;
+	}
+}
+@media only screen 
+  and (min-width: 321px)
+  and (max-width: 767px){
+  	.banner{
+	    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.4) ), image-url('carpacho-mob.jpg');
+	}
+	.banner h1{
+		font-size: 27px;	
+	}
+	.banner h3{
+		font-size: 18px;
+		margin-top: -9px;
+		margin-bottom: 36px;
+	}
+	.btn-banner{
+		font-size: 15px;
+		padding: 9px 18px;
+		margin-left: 3px;
+    	margin-right: 3px;
+	}
+
+ }
+
+@media only screen 
+  and (min-width: 768px)
+  and (max-width: 990px){
+  	.banner h1{
+		font-size: 46px;	
+	}
+	.banner h3{
+		font-size: 27px;
+    	margin-top: -9px;
+    	margin-bottom: 72px;
+	}
+	.btn-banner{
+		font-size: 23px;
+    	padding: 12px 35px;
+    	margin-left: 9px;
+   		margin-right: 9px;	}
+  }
+
+
+
