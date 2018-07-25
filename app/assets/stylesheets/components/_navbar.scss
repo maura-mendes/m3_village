@@ -1,5 +1,5 @@
 .navbar{
-	height:170px;
+	height:140px;
 	position: fixed;
 	top: 0px;
 	width: 100%;
@@ -36,11 +36,33 @@
     font-size: 17px;
 }
 .navbar-large{
-	height: 120px;
-  	background-color: rgba(0, 0, 0, 0.4);;
+	height: 90px;
+  	background-color: rgba(0, 0, 0, 0.4);
+  	font-weight: lighter;
 }
-// .negative-margin {
-//     margin-top: -70px;
-// }
+.navbar-large  ul {
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
 
+.navbar-links{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 21px 175px;
+}
+
+.navbar-links a{
+	color: #FFFFFF;
+	opacity: 0.8;
+	text-decoration: none;
+	font-family: Open Sans;
+	font-size: 13px;
+}
+
+
+#logo{
+
+}
   	
