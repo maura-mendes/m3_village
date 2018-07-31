@@ -24,33 +24,17 @@
 	font-family: Open Sans;
 	font-size: 13px;
 }
-
-.nav-icons{
-  display: inline-block;
-  text-align: center;
-}
 .nav-icons  a{
 	color: #FFFFFF;
 	opacity: 0.8;
 	text-decoration: none;
-	font-size: 12px;
-
-}
-
-.nav-icons .active{
-  color: #E78B48;
-  font-weight: bold; 
+	font-size: 14px;
 }
 .nav-icons  i{
 	position: relative;
-    left: -101px;
+    left: -24px;
     font-size: 17px;
 }
-
-.nav-icons .language{
-  position: relative;
-}
-
 .navbar-large{
 	height: 90px;
   	background-color: rgba(0, 0, 0, 0.4);
@@ -77,11 +61,8 @@
 	font-size: 13px;
 }
 
-@media only screen 
-  and (max-width: 320px){
 
-  	
+#logo{
+
 }
-
-
   	
