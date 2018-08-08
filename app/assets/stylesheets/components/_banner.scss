@@ -95,7 +95,7 @@
 
 @media only screen 
   and (min-width: 768px)
-  {
+  and (max-width: 990px){
   	.banner h1{
 		font-size: 38px;	
 	}
@@ -109,7 +109,7 @@
     	padding: 12px 35px;
     	margin-left: 9px;
    		margin-right: 9px;	}
-  }
+}
 
 
 
