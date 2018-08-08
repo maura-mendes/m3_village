@@ -2,54 +2,57 @@
 	height:140px;
 	position: fixed;
 	top: 0px;
-	width: 100%;
+	width: 100vw;
+	
+
 }
 
-.navbar-mini{
-	background: #181818;
-	// width: 1440px;
-	height: 50px ;
-	color: #FFFFFF;
-	font-weight: lighter;
-}
-.nav-flexbox{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 14px;
-	opacity: 0.8;
-}
-.nav-flexbox p{
-	margin-bottom: 0px;
-	font-family: Open Sans;
-	font-size: 13px;
-}
+// .navbar-mini{
+// 	background: #181818;
+// 	// width: 1440px;
+// 	height: 50px ;
+// 	color: #FFFFFF;
+// 	font-weight: lighter;
+// }
+// .nav-flexbox{
+// 	display: flex;
+// 	justify-content: space-between;
+// 	align-items: center;
+// 	padding: 14px;
+// 	opacity: 0.8;
+// }
+// .nav-flexbox p{
+// 	margin-bottom: 0px;
+// 	font-family: Open Sans;
+// 	font-size: 13px;
+// }
 
 .nav-icons{
   display: inline-block;
   text-align: center;
 }
-.nav-icons  a{
+.nav-icons>a{
 	color: #FFFFFF;
 	opacity: 0.8;
 	text-decoration: none;
-	font-size: 12px;
+	list-style: none;
+	font-size: 10px;
 
 }
 
-.nav-icons .active{
+.nav-icons.active{
   color: #E78B48;
   font-weight: bold; 
 }
 .nav-icons  i{
-	position: relative;
-    left: -101px;
-    font-size: 17px;
+	// position: relative;
+ //    left: -101px;
+ //    font-size: 17px;
 }
 
-.nav-icons .language{
-  position: relative;
-}
+
+
+
 
 .navbar-large{
 	height: 90px;

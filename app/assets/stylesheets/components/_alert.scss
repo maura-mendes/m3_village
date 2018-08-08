@@ -9,6 +9,9 @@
 }
 .alert-info {
   background: $green;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
 }
 .alert-warning {
   background: $red;
