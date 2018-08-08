@@ -70,6 +70,66 @@
     	margin-right: 0px;
 	}
 }
+
+.heading-primary{
+	// color: #FFF;
+	text-transform: uppercase;
+	// to avoide the animation  to move/shake the banner
+	backface-visibility: hidden; 
+	// margin-bottom: 6rem;
+
+
+}
+.heading-primary--main{
+	display: block;
+	// font-size: 5rem;
+	// font-weight: 400;
+	// letter-spacing: 3.5rem;
+	animation-name: moveInLeft;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+	// animation-delay: 3s;
+	// animation-iteration-count: 3;
+	// animation-timing-function: ease-out; there's other values for this property
+
+}
+.heading-primary--sub{
+	display: block;
+	// font-size: 1.5rem;
+	// font-weight: 400;
+	// letter-spacing: 1.75rem;
+	// margin-top: 1.5rem;
+	animation: moveInRight 1s ease-out;
+}
+// banner header animation
+@keyframes moveInLeft{
+	0%{
+		opacity: 0;
+		transform: translateX(-100px)
+	}
+	80%{
+		transform: translateX(10px)
+	}
+	100%{
+		opacity: 1;
+		transform: translate(0)
+	}
+}
+@keyframes moveInRight{
+	0%{
+		opacity: 0;
+		transform: translateX(100px)
+	}
+	80%{
+		transform: translateX(-10px)
+	}
+	100%{
+		opacity: 1;
+		transform: translate(0)
+	}
+}
+
+
 @media only screen 
   and (min-width: 321px)
   and (max-width: 767px){
