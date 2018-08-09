@@ -1,0 +1,136 @@
+
+
+.card-margin {
+  padding: 5px;
+}
+
+.card-wrapper {
+  // &:hover, &:active, &:focus {
+  // //   outline: none;
+  // }
+  transition: transform 0.3s !important;
+  &:hover{
+    transform: translateY(-15px) scale(1.03) !important;
+  }
+
+}
+
+
+.cards-container {
+  height: 330px;
+  background-size: cover !important;
+  background-color: white;
+  background-position: center;
+  position: relative;
+  justify-content: space-around;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+  padding: 0 0 20px 0;
+  max-width: 100vw;
+  
+}
+
+.card-link {
+  color: #545454;;
+  position: absolute !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  // cursor: pointer !important;
+  z-index: 10;
+  background: black;
+  opacity: 0;
+  // &:hover, &:active, &:focus {
+  //   text-decoration: none;
+  //   color: #545454;;
+  //   outline: none;
+  // }
+}
+
+.card-details {
+  margin-top: 10px;
+  padding: 3px 11px;
+
+}
+
+.room-name {
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #181818;
+  font-family: Roboto;
+}
+
+.room-size {
+ 
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: Open Sans;
+    font-weight: 400;
+    color: #181818;
+
+}
+
+.room-beds {
+  font-size: 12px;
+  color: $orange;
+  text-transform: capitalize;
+  font-family: Roboto;
+  font-weight: 700;
+
+}
+
+.room-capacity {
+  font-size: 12px;
+  color: $orange;
+  text-transform: capitalize;
+  font-family: Roboto;
+  font-weight: 700;
+}
+
+
+
+
+.card-image {
+  position: relative;
+  height: 72%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2) ), image-url('room1.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  // &:hover, &:active, &:focus {
+  //   outline: none;
+
+
+// }
+}
+
+
+.card-row {
+  padding: 0px 10px;
+  margin-top: 5px;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+  position:relative;
+  z-index:2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-margin-adjustment{
+  margin-top: 15px;
+}
+
+#icon-bed{
+  margin-right: 10px;
+}
+
+#icon-people{
+  margin-right: 10px;
+}
+
+
