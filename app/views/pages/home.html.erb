@@ -21,7 +21,43 @@
 		<h4>Rooms</h4>
 		<p>Clean, confortable and well equiped rooms, that match your needs!</p>
 		<%= render 'shared/card-room' %>
+	</div>	
+</div>
+<div class="wrapper-foodrinks">
+	<div class="container">
+		<h4>Food & Drinks</h4>
+		<p>Enjoy a broad selection of dishes representative of Mozambican and International cuisines, all carefully prepared by our chef</p>	
+		<div class="row">			
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('assets/stake.jpg');">
+					</div>
+				</div>	
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('assets/seafood.jpg');">
+					</div>					
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('assets/crepe.jpg');">
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('assets/tiramisu.jpg');">
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('assets/pizza.jpg');">
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('assets/burger.jpg');">
+					</div>					
+				</div>					
+		</div>	
 	</div>
-	
+	<div class="foodrinks-button">
+		<%= render 'shared/btn-foodrinks' %>
+	</div>
 
+	
+	
 </div>

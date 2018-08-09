@@ -1,4 +1,5 @@
 // Specific CSS for your home-page
+// about us section
 .wrapper-aboutus{
 	background: #FFFFFF;
 	padding: 10px;
@@ -7,7 +8,7 @@
 .wrapper-aboutus h4{
 	font-family: Roboto;
 	font-weight: bold;
-	font-size: 33px;
+	font-size: 26px;
 	color: rgba(24, 24, 24, 0.8);
 	text-align: center;
 	margin-top: 59px;
@@ -19,16 +20,19 @@
 	text-align: justify;
 	color: rgba(24, 24, 24, 0.65);
 	letter-spacing: 0.03em;
-	margin-top: 39px;
+	margin-top: 27px;
 }
+
+// rooms section
 .wrapper-rooms{
 	background: #F9F9F9;
+  padding-bottom: 53px;
 }
 
 .wrapper-rooms h4{
 	font-family: Roboto;
 	font-weight: bold;
-	font-size: 33px;
+	font-size: 26px;
 	color: rgba(24, 24, 24, 0.8);
 	text-align: center;
 	margin-top: 42px;
@@ -40,9 +44,38 @@
 	text-align: center;
 	color: rgba(24, 24, 24, 0.70);
 	letter-spacing: 0.03em;
-	margin-top: 39px;
+  margin-top: 11px;
+  margin-bottom: 34px;
 }
 
+// food and drinks section
+
+.wrapper-foodrinks{
+  background: #FFFFFF;
+  padding-top: 44px;
+  padding-bottom: 140px;
+
+}
+
+.wrapper-foodrinks h4{
+  ont-family: Roboto;
+  font-weight: bold;
+  font-size: 26px;
+  color: rgba(24, 24, 24, 0.8);
+  text-align: center;
+  margin-top: 0px;
+ 
+}
+
+.wrapper-foodrinks p{
+  font-family: Open Sans;
+  font-size: 17px;
+  text-align: center;
+  color: rgba(24, 24, 24, 0.65);
+  letter-spacing: 0.03em;
+  margin-top: 11px;
+  margin-bottom: 34px;
+}
 
 
 // Media Queries
