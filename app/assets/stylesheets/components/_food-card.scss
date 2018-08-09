@@ -7,8 +7,9 @@
   position: relative;
   margin-right: -6px;
   margin-bottom: 21px;
-
+  transition: transform 0.3s;
 }
+
 .card-user {
   position: absolute;
   right: 10px;
