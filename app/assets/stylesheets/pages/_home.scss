@@ -95,16 +95,13 @@
   position: relative;
   top: -152px;
   margin-bottom: -126px;
-& h4{
-  font-family: Roboto;
-  font-weight: bold;
-  font-size: 26px;
-  opacity: .8;
-  padding-bottom: 24px;
-
-  
-  }  
-  
+  & h4{
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 26px;
+    opacity: .8;
+    padding-bottom: 24px; 
+  }
 }
 
 .avatar-lg{
@@ -217,6 +214,9 @@
   		text-align: justify;
       margin-bottom: 25px;
   	}
+    .wrapper-foodrinks{
+      padding-bottom: 199px;
+    }
     .wrapper-foodrinks h4{
       font-size: 19px;
       margin-top: -15px;
@@ -229,17 +229,42 @@
       margin-bottom: 25px;
     }
     .review-box{
-
       margin-right: 0px;
       margin-left: 0px;
+      padding: 20px;
+      margin-top: -31px;
     }
     .reviews-content{
       display: block;
       & p{
-        font-size: 13px;
-        
+      font-size: 13px;
+      align-items: right;
+      /* align-items: flex-start; */
+      text-align: justify;
+      margin-left: -6px;
+      margin-right: -6px; 
+      margin-top: -43px;  
       }
     }
+    .avatar-lg{
+      position: relative;
+      top: -49px;
+      border: 3px solid $dark-gray;
+      box-shadow: 1px 3px 15px $dark-gray;
+      height: 80px;
+      width: 80px;
+    }
+    .review-username{
+      font-size: 13px;
+    }
+    .review-date{
+      font-size: 13px;
+    }
+
+    .banner-reviews h4{
+      font-size: 13px;
+    }
+
   }
   // large mobile
 @media only screen 
@@ -277,6 +302,43 @@
       
       margin-bottom: 26px;
     }
+    .review-box{
+      margin-right: 0px;
+      margin-left: 0px;
+      padding: 20px;
+      margin-top: -31px;
+    }
+    .reviews-content{
+      display: block;
+      & p{
+      font-size: 13px;
+      align-items: right;
+      /* align-items: flex-start; */
+      text-align: justify;
+      margin-left: -6px;
+      margin-right: -6px; 
+      margin-top: -43px;  
+      }
+    }
+    .avatar-lg{
+      position: relative;
+      top: -49px;
+      border: 3px solid $dark-gray;
+      box-shadow: 1px 3px 15px $dark-gray;
+      height: 80px;
+      width: 80px;
+    }
+    .review-username{
+      font-size: 13px;
+    }
+    .review-date{
+      font-size: 13px;
+    }
+
+    .banner-reviews h4{
+      font-size: 13px;
+    }
+
   }
 
 
@@ -311,6 +373,7 @@
       font-size: 18px;
       letter-spacing: 0.03em;
     }
+    
   }
 
   
