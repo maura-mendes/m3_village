@@ -21,6 +21,7 @@
 	color: rgba(24, 24, 24, 0.65);
 	letter-spacing: 0.03em;
 	margin-top: 27px;
+  line-height: 1.9;
 }
 
 // rooms section
@@ -75,6 +76,7 @@
   letter-spacing: 0.03em;
   margin-top: 11px;
   margin-bottom: 34px;
+  line-height: 1.9;
 }
 
 // reviews section
@@ -191,19 +193,34 @@
   // .container{
   //   width: 900px;
   // }
-
-  .card-pub-content{
-    padding-top: 30px;
-  }
-  .card-pub-title{
+  h4{
     font-family: Roboto;
     font-weight: bold;
-    font-size: 24px;
-    
-    text-align: left;
-   
- 
-    color: $orange;
+    font-size: 26px;
+    color: rgba(24, 24, 24, 0.8);
+    text-align: center;
+    margin-top: 59px;
+    margin-bottom: 28px;
+  }
+  .card-pub-content{
+    padding-top: 52px;
+    h5{
+      font-family: Roboto;
+      font-weight: bold;
+      font-size: 24px;
+      color: $orange;
+      text-align: left;
+      margin-bottom: -8px;  
+      }
+    p{
+      font-family: Open Sans;
+      font-size: 17px;
+      text-align: justify;
+      color: rgba(24, 24, 24, 0.65);
+      letter-spacing: 0.03em;
+      margin-top: 25px;
+      line-height: 1.9;
+    }
   }
   & hr{
     margin-top: 25px;
@@ -212,6 +229,7 @@
     border-top: 1px solid #e0e0e0;
   }
 }
+
 
  
 // Media Queries
@@ -290,8 +308,35 @@
     .banner-reviews h4{
       font-size: 13px;
     }
-
+    .link-reviews a{
+      font-size: 15px;
+      margin-top: -9px;
+    }
+    .wrapper-otherservices {
+      h4{
+        font-size: 19px;
+        margin-top: -17px;
+        margin-bottom: -6px;
+      }
+      .card-pub-content{
+      padding-top: 0px;  
+      h5{
+        font-size: 17px;
+        margin-bottom: 0;
+        margin-top: 5px;
+        margin-bottom: 7px;
+      }
+      p{
+        font-size: 13px;
+        letter-spacing: 0.00em;
+        line-height: 1.4;
+        margin-top: 0;
+      }
+    } 
   }
+    
+    
+}
   // large mobile
 @media only screen 
   and (min-width: 321px)
@@ -365,7 +410,37 @@
       font-size: 13px;
     }
 
-  }
+
+
+    .link-reviews a{
+      font-size: 15px;
+      margin-top: -9px;
+    }
+    .wrapper-otherservices {
+      h4{
+        font-size: 19px;
+        margin-top: -17px;
+        margin-bottom: -6px;
+      }
+      .card-pub-content{
+        padding-top: 0px;  
+        h5{
+          font-size: 17px;
+          margin-bottom: 0;
+          margin-top: 5px;
+          margin-bottom: 7px;
+        }
+        p{
+          font-size: 13px;
+          letter-spacing: 0.00em;
+          line-height: 1.4;
+          margin-top: 0;
+        }
+      } 
+    }
+
+
+}
 
 
 // ipad 
