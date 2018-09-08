@@ -186,6 +186,32 @@
 }
 
 // other services section
+.wrapper-otherservices{
+  background: #f4f4f5;
+  // .container{
+  //   width: 900px;
+  // }
+
+  .card-pub-content{
+    padding-top: 30px;
+  }
+  .card-pub-title{
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 24px;
+    
+    text-align: left;
+   
+ 
+    color: $orange;
+  }
+  & hr{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: 0;
+    border-top: 1px solid #e0e0e0;
+  }
+}
 
  
 // Media Queries
@@ -373,7 +399,7 @@
       font-size: 18px;
       letter-spacing: 0.03em;
     }
-    
+
   }
 
   
