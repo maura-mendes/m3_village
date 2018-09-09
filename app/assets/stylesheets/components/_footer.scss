@@ -1,0 +1,66 @@
+.wrapper-footer{
+	background: $black;
+	height: 500px;
+	
+	.logo-name{
+		color: rgba(255, 255, 255, 0.8);
+		font-family: Permanent Marker;
+		font-size: 16px;
+		line-height: 8px;
+	}
+	.logo-footer{
+		position: relative;
+		left: 12px;
+	}
+	.address-section{
+		padding-top: 33px;
+    	
+	}
+	.contact-txt p{
+		font-family: Open Sans;
+		font-weight: lighter;
+		color: rgba(255, 255, 255, 0.9);
+		font-size: 14px;
+		letter-spacing: 0.03em;
+	  	line-height: 1.9;
+	  	margin-top: 58px;
+	}
+	.footer-adress p{
+		font-family: Open Sans;
+		font-weight: lighter;
+		color: rgba(255, 255, 255, 0.6);
+		font-size: 14px;
+		letter-spacing: 0.03em;
+	  	line-height: 1.9;
+	    margin-top: 20px;
+	}
+	.links-section1{
+		font-family: Open Sans;
+		padding-top: 64px;
+		font-size: 14px;
+		font-weight: lighter;
+		color: rgba(255, 255, 255, 0.9);
+		letter-spacing: 0.03em;
+	  	line-height: 1.9;
+	  	& > p{
+				margin-top: 27px;
+	  	}
+	}
+	.visit-us-txt p{
+		margin-top: 51px;
+
+	}
+	.links-section2{
+		font-family: Open Sans;
+		padding-top: 64px;
+		font-size: 14px;
+		font-weight: lighter;
+		color: rgba(255, 255, 255, 0.9);
+		letter-spacing: 0.03em;
+	  	line-height: 1.9;
+		& > p{
+			margin-top: 27px;
+		}
+	}
+}
+
