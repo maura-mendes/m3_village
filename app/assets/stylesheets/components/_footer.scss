@@ -48,6 +48,7 @@
 	}
 	.visit-us-txt p{
 		margin-top: 51px;
+		// font-size: 17px;
 
 	}
 	.links-section2{
@@ -62,5 +63,143 @@
 			margin-top: 27px;
 		}
 	}
+
 }
+
+.rights-reserved{
+	display: flex;
+    justify-content: space-around;
+    padding-top: 27px;
+    margin-bottom: 70px;
+	small {
+	font-family: Open Sans;
+	font-weight: 300;
+	color: rgba(255, 255, 255, 0.3);
+	font-size: 12px;
+	letter-spacing: 0.03em;
+	
+}
+
+}
+
+.cta-book-footer{
+	position: relative;
+    top: 52px;
+
+}
+
+@media only screen 
+  and (max-width: 320px){
+  .wrapper-footer{
+  	.logo-name{
+		position: relative;
+		left: 38px;
+  	}
+  	.logo-footer{
+  		position: relative;
+  		left: 53px;
+  	}
+  	.address-section{
+    display: inline-block;
+    text-align: justify;
+    padding-left: 36px;
+    padding-top: 13px;
+  	}
+  	.contact-txt p{
+  		margin-top: 28px;
+  		font-size: 13px;
+  	}
+  	.footer-adress p{
+  		font-size: 13px;
+  	}
+  	.links-section1{
+  		font-size: 13px;
+    	padding-top: 0px;
+    	padding-left: 36px;
+  		& > p{
+  			margin-top: 8px;
+  			margin-bottom: 0;
+  		}
+  	}
+  	.visit-us-txt p{
+  		 margin-top: 26px;
+  	}
+  	.links-section2{
+  		padding-top: 0px;
+    	font-size: 13px;
+    	padding-left: 36px;
+    	& > p{
+    		    margin-top: 8px;
+    	}
+  	}
+  }
+  .rights-reserved{
+  	padding-top: 24px;
+  	margin-bottom: 29px;
+  	small{
+  		font-size: 10px;
+  	}
+  }	  	
+ }
+
+@media only screen 
+  and (min-width: 321px)
+  and (max-width: 767px){
+	  .wrapper-footer{
+  	.logo-name{
+		position: relative;
+		left: 64px;
+  	}
+  	.logo-footer{
+  		position: relative;
+  		left: 79px;
+  	}
+  	.address-section{
+    display: inline-block;
+    text-align: justify;
+    padding-left: 36px;
+    padding-top: 13px;
+  	}
+  	.contact-txt p{
+  		margin-top: 28px;
+  		font-size: 13px;
+  	}
+  	.footer-adress p{
+  		font-size: 13px;
+  	}
+  	.links-section1{
+  		font-size: 13px;
+    	padding-top: 0px;
+    	padding-left: 36px;
+  		& > p{
+  			margin-top: 8px;
+  			margin-bottom: 0;
+  		}
+  	}
+  	.visit-us-txt p{
+  		 margin-top: 26px;
+  	}
+  	.links-section2{
+  		padding-top: 0px;
+    	font-size: 13px;
+    	padding-left: 36px;
+    	& > p{
+    		    margin-top: 8px;
+    	}
+  	}
+  }
+  .rights-reserved{
+  	padding-top: 24px;
+  	margin-bottom: 29px;
+  	small{
+  		font-size: 10px;
+  	}
+  }	 
+
+}
+
+
+
+
+
 
