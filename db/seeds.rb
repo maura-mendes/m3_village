@@ -9,7 +9,9 @@
 
 
 puts "destroying all data"
+RoomAttachment.destroy_all
 Room.destroy_all
+
 puts "creating"
 
 
@@ -20,7 +22,8 @@ room1 = Room.create!({
   size: 50,
   bed: 1,
   })
-room1.room_attachments.create!({photo: open("https://api.cloudinary.com/v1_1/demo/image/upload") })
+room1.room_attachments.create!(photo: "https://res.cloudinary.com/dcu9atpmg/image/upload/v1537303049/z42o0etim8vxewmuxd8v.jpg")
+# room1.room_attachments.create!({photo: open("https://api.cloudinary.com/v1_1/demo/image/upload") })
  
 
 room2 = Room.create!({
@@ -29,3 +32,4 @@ room2 = Room.create!({
   size: 50,
   bed: 1,
 })
+room2.room_attachments.create!(photo: "https://res.cloudinary.com/dcu9atpmg/image/upload/v1537307008/h6gonhidexanuovegywz.jpg")
