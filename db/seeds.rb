@@ -19,9 +19,9 @@ room1 = Room.create!({
   capacity: 2,
   size: 50,
   bed: 1,
-})
-walk.walk_attachments.create!(remote_photo_url: "http://res.cloudinary.com/geebabygee/image/upload/c_scale,w_640/v1520446746/street-art-kobra.jpg")
-
+  })
+room1.room_attachments.create!({photo: open("https://api.cloudinary.com/v1_1/demo/image/upload") })
+ 
 
 room2 = Room.create!({
   name: "Kind size room",
