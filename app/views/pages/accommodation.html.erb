@@ -1,14 +1,32 @@
-<div class="banner banner-image">
-	
-	<div class="banner-content">
-		<h1><span class="title-bold">MAKE YOURSELF</span> <span class="title-light">AT HOME</span></h1>
-		<p>The perfect mix of business and leisure for today's comfort-seeking traveler</p>
+<div class="banner-accomodation">
+	<div class="header-textbox">
+		<h1 class="heading-primary">
+
+		<span class="main-header title-bold">MAKE YOURSELF</span> <span class="title-light">AT HOME</span>
+		</h1>
+		<p><span class="header-paragraph">he perfect mix of business and leisure for today's comfort-seeking traveler</span></p>
 		<div class="btn-position">
 			<%= render 'shared/btn-book-now'  %>
 		</div>
-				
+	</div>
+	<div class="search-bar">
+		<%= simple_form_for(@rooms) do |f| %>
+			<%= f.input :name, placeholder: "Check in" %>
+			<%= f.submit "Search", class: "btn btn-primary"  %>
+		<% end %>
 	</div>
 </div>
-<div class="main-serach-bar">
-	
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

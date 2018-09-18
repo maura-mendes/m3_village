@@ -4,7 +4,7 @@
 		<h1 class="heading-primary--main"><span class="title-bold">WELCOME TO</span> <span class="title-light">M3 VILLAGE</span></h1>
 		<h3 class="heading-primary--sub">XAI-XAI | MOZAMBIQUE</h3>
 		<%= link_to "ACCOMMODATION",  pages_accommodation_path, class: "btn-banner " %>
-		<%= link_to "RESTAURANT & PUB", "#{ß}", class: "btn-banner " %>
+		<%= link_to "RESTAURANT & PUB", "#", class: "btn-banner " %>
 	</div>
 </div>
 
@@ -12,7 +12,7 @@
 	<div class="container">
 		<h4>About us</h4>
 		<hr>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupida</p>	ß
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupida</p>	
 	</div>
 
 </div>
@@ -20,7 +20,13 @@
 	<div class="container">
 		<h4>Rooms</h4>
 		<p>Clean, confortable and well equiped rooms, that match your needs!</p>
-		<%= render 'shared/card-room' %>
+		<div class="row">
+			<% @rooms.each do |r| %>
+			<div class="col-xs-12 col-sm-6">
+				<%= render  "rooms/room", room: r %>
+			</div>
+			<% end %>	
+		</div>
 	</div>
 	<div class="cta-rooms">
 		<%= render 'shared/btn-book' %>	

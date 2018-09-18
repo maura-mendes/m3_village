@@ -1,0 +1,7 @@
+<%= simple_form_for(@booking) do |f| %>
+	<%= f.input :check_in, placeholder: "Check in" %>
+	<%= f.input :check_out, placeholder: "Check out" %>
+	<%= f.input adult:, placeholder: "Adult" %>
+	<%= f.input child:, placeholder: "Child" %>
+	<%= f.submit "Search", class: "btn btn-primary"  %>
+<% end %>

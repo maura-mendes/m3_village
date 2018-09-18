@@ -96,7 +96,8 @@
   position: relative;
   height: 72%;
   width: 100%;
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2) ), image-url('room1.jpeg');
+  // background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2) ), image-url('room1.jpeg');
+  background: rgba(84, 84, 84, 0.6);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

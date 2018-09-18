@@ -1,0 +1,14 @@
+<div class="container">
+	<h1>hi there</h1>
+	<div class="row">
+	<% @rooms.each do |r| %>
+	<div class="col-xs-12 col-sm-6">
+		<%= render  "room", room: r %>
+	</div>
+	<% end %>	
+</div>
+</div>
+
+
+
+
