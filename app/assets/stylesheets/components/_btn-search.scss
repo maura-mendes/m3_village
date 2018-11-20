@@ -1,0 +1,25 @@
+.btn-search{
+	width: 200px;
+    height: 50px;
+    // background: $orange;
+    // background-image: linear-gradient(rgba($orange, 0.8), rgba($orange, 0.2));
+    background-image: linear-gradient(#F6B072, #F9C08E);
+    // background-color: linear-gradient(rgba(231, 139, 72, 0), rgba(231, 139, 72, 0) );
+    border-radius: 4px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 25px;
+    text-decoration: none;
+    list-style: none;
+    padding: 13px 54px;
+    &:hover{
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    &:active{
+        text-decoration: none;
+    }
+}

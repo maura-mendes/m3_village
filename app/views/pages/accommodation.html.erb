@@ -1,21 +1,42 @@
 <div class="banner-accomodation">
 	<div class="header-textbox">
 		<h1 class="heading-primary">
-
 		<span class="main-header title-bold">MAKE YOURSELF</span> <span class="title-light">AT HOME</span>
 		</h1>
-		<p><span class="header-paragraph">he perfect mix of business and leisure for today's comfort-seeking traveler</span></p>
+		<p><span class="header-paragraph">The perfect mix of business and leisure for today's comfort-seeking traveller</span></p>
 		<div class="btn-position">
 			<%= render 'shared/btn-book-now'  %>
 		</div>
 	</div>
 	<div class="search-bar">
-		<%= simple_form_for(@rooms) do |f| %>
-			<%= f.input :name, placeholder: "Check in" %>
-			<%= f.submit "Search", class: "btn btn-primary"  %>
-		<% end %>
+		<div class="search-content">
+			<%= form_tag rooms_path, method: :get do %>
+				<div class="row">
+					<div class="col-sm-2">
+						<%= date_field_tag 'date' %>
+					</div>
+					<div class="col-sm-2">
+						<%= date_field_tag 'date' %>
+					</div>
+					<div class="col-sm-2">
+						<%= text_field_tag 'query', 'Room' %>
+					</div>
+					<div class="col-sm-2">
+						<%= text_field_tag 'query', 'Adult' %>
+					</div>
+					<div class="col-sm-2">
+						<%= text_field_tag 'query', 'Child' %>
+					</div>
+					<div class="col-sm-2">
+						<%= render 'shared/btn-search'  %>
+					</div>	
+				</div>	
+			<% end %>
+		</div>
 	</div>
 </div>
+
+
 
 
 

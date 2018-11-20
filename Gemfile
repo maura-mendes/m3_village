@@ -4,6 +4,7 @@ ruby '2.4.4'
 
 gem 'cloudinary'
 gem 'figaro'
+gem 'jquery-ui-rails'
 
 
 
