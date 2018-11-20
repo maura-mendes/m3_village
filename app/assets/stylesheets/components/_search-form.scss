@@ -2,5 +2,12 @@
 	display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 36px;
+    margin-top: 50px;
+}
+
+input{
+	background: transparent;
+    color: rgba(149, 144, 144, 0.9);
+    border: 2px solid rgba(149, 144, 144, 0.9);
+    height: 39px;
 }

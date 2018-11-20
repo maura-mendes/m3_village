@@ -35,9 +35,23 @@
 
 .search-bar{
 	width: 100vw;
-	height: 100px;
+	height: 140px;
 	background: rgba(0, 0, 0, 0.6);
 	position: absolute;
-	top: calc(100vh - 100px);;
+	top: calc(100vh - 140px);
 	left: 0;
+	// display: flex;
+ //    justify-content: space-around;
+
+}
+
+.headers{
+	display: flex;
+	justify-content: flex-end;
+	h4{
+
+	}
+	h3{
+		
+	}
 }
