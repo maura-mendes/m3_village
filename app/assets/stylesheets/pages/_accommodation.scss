@@ -45,13 +45,10 @@
 
 }
 
-.headers{
-	display: flex;
-	justify-content: flex-end;
-	h4{
-
-	}
-	h3{
-		
-	}
+.search-header{
+	position: relative;
+    left: 172px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 21px;
 }
+
