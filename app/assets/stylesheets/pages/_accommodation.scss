@@ -69,8 +69,43 @@
 	color: $orange;
 }
 
+.mobile-form{
+	// width: 100vw;
+	// height: 140px;
+	// background-color: white;
+	position: relative;
+	top: 200px;
+	left: 0;
+}
 
+.flexbox{
+	display: flex;
+	justify-content: space-around;
 
+	h1{
+  	font-size: 27px;
+  	color: white;
+
+  }
+}
+
+@media only screen 
+  and (max-width: 320px){
+  .mobile-form{
+  	left: 15px;
+  }
+
+} 
+
+@media only screen 
+  and (min-width: 321px)
+  and (max-width: 767px){
+   .mobile-form{
+  	left: 15px;
+  	top: 480px;
+  }
+ }
+ 
 
 
 
