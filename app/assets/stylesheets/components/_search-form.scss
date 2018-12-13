@@ -27,26 +27,26 @@ input{
 	
 }
 
-.mob-input{
-	width: 158px;
-    margin-top: 12px;
-}
+// .mob-input{
+// 	width: 158px;
+//     margin-top: 12px;
+// }
 
-.mob-input-small{
-	width: 104px;
-    margin-top: 4px;
-}
-.margin-left-input{
-	margin-left: -27px;
-}
+// .mob-input-small{
+// 	width: 104px;
+//     margin-top: 4px;
+// }
+// .margin-left-input{
+// 	margin-left: -27px;
+// }
 
-.marg-left-adult{
-    margin-left: -18px;
-}
+// .marg-left-adult{
+//     margin-left: -18px;
+// }
 
-.marg-left-child{
-	margin-left: -35px;
-}
+// .marg-left-child{
+// 	margin-left: -35px;
+// }
 
 @media only screen 
   and (max-width: 320px){
@@ -58,7 +58,7 @@ input{
 	}
 	.mob-input-small{
 		width: 91.2px;
-		margin-top: 3px;
+		    margin-top: 3px;
 	}
 	.marg-left-adult{
     	margin-left: -14px;
