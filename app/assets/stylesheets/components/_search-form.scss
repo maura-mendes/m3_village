@@ -40,7 +40,7 @@ input{
   		margin-right: -2px;
   	}
   	.search-content{
-  		margin-top: 11px;
+  		margin-top: 30px;
   	}
   }
 
@@ -58,10 +58,7 @@ input{
   		margin-right: -2px;
   	}
   	.search-content{
-  		margin-top: 11px;
-  	}
-  	.search-content{
-  		margin-top: 23px;
+  		margin-top: 41px;
   	}
   }
 
@@ -69,124 +66,34 @@ input{
   and (min-width: 768px)
   and (max-width: 990px){
   	.search-content{
-  		margin-right: -124px;
+  		margin-right: -125px;
+  		margin-top: 62px;
   	}
   	input{    
-  		width: 178px;
-  		margin-right: 0px;
+  		width: 307px;
+	    height: 42px;
+	    margin-right: 0px;
+	    font-size: 19px;
   	}
   	.special_input{
-  		width: 100px;
+  		width: 203px;
+	    margin-top: 6px;
+  	}
+  	.calendar-input{
+  		background-size: 12% 70%;
   	}
   }
 
+@media only screen 
+  and (min-width: 992px)
+  and (max-width: 1439px){
+ 	input{
+ 		width: 138px;
+    	font-size: 14px;
+ 	}
 
-// .mob-input{
-// 	width: 158px;
-//     margin-top: 12px;
-// }
+}
 
-// .mob-input-small{
-// 	width: 104px;
-//     margin-top: 4px;
-// }
-// .margin-left-input{
-// 	margin-left: -27px;
-// }
-
-// .marg-left-adult{
-//     margin-left: -18px;
-// }
-
-// .marg-left-child{
-// 	margin-left: -35px;
-// }
-
-// @media only screen 
-//   and (max-width: 320px){
-//     .mob-input{
-// 		width: 137.5px;
-// 	}
-// 	.margin-left-input{
-//     	margin-left: -20px;
-// 	}
-// 	.mob-input-small{
-// 		width: 91.2px;
-// 		    margin-top: 3px;
-// 	}
-// 	.marg-left-adult{
-//     	margin-left: -14px;
-// 	}
-// 	.marg-left-child{
-//     	margin-left: -27px;
-// 	}
-// 	.calendar-input{
-// 		background-size: 18% 70%;
-// 	}
-// 	input{
-// 		padding: 10px 6px;
-// 		font-size: 15px;
-// 	}
-
-// } 
-
-// @media only screen 
-//   and (min-width: 321px)
-//   and (max-width: 413px){
-// 	.mob-input{
-// 		width: 158px;
-// 	    margin-top: 12px;
-// 	}
-
-// 	.mob-input-small{
-// 		width: 104px;
-// 	    margin-top: 4px;
-// 	}
-// 	.margin-left-input{
-// 		margin-left: -27px;
-// 	}
-
-// 	.marg-left-adult{
-// 	    margin-left: -18px;
-// 	}
-
-// 	.marg-left-child{
-// 		margin-left: -35px;
-// 	}
-// 	.calendar-input{
-// 		background-size: 18% 70%;
-// 	}
-// }
-
-
-
-// @media only screen 
-//   and (min-width: 414px)
-//   and (max-width: 767px){
-// 	.mob-input{
-// 		width: 158px;
-// 	    margin-top: 12px;
-// 	}
-
-// 	.mob-input-small{
-// 		width: 104px;
-// 	    margin-top: 4px;
-// 	}
-// 	.margin-left-input{
-// 		margin-left: -46px;
-// 	}
-
-// 	.marg-left-adult{
-// 	    margin-left: -31px;
-// 	}
-
-// 	.marg-left-child{
-// 		margin-left: -62px;
-// 	}
-// 	.calendar-input{
-// 		background-size: 18% 70%;
-// 	}
-// }
 
 
 

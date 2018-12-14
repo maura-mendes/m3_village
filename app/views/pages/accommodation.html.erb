@@ -5,7 +5,7 @@
 		<span class="main-header title-bold">MAKE YOURSELF</span> <span class="title-light">AT HOME</span>
 		</h1>
 		<p><span class="header-paragraph">The perfect mix of business and leisure for today's comfort-seeking traveller</span></p>
-		<div class="btn-position hidden-xs">
+		<div class="btn-position hidden-xs hidden-sm">
 			<%= render 'shared/btn-book-now'  %>
 		</div>
 	</div>
@@ -29,42 +29,6 @@
 			</div>
 		</div>	
 	</div>
-	 <!-- MOBILE VERSION -->
-	 <!-- <div class="flexbox hidden-md hidden-lg">
-	 	<h1 class="mobile-header">
-		<span class="title-bold">MAKE YOURSELF</span> <span class="title-light">AT HOME</span>
-		</h1>
-
-	 </div>
-	<div class="search-bar hidden-md hidden-lg">
-		<p>The perfect mix of business and leisure <br> for today's comfort-seeking traveller</p>
-		<div class="row">	
-			<div class="form-background col-xs-12 col-sm-6 col-sm-offset-3">
-				<div class="mobile-form ">
-					<%= form_tag rooms_path, method: :get do %>
-						<div class="col-xs-6">
-							<input placeholder="Check in " class="calendar-input mob-input" type="text" onfocus="(this.type='date')"  id="check_in"> 
-						</div>
-						<div class="col-xs-6">
-							<input placeholder="Check out " class="calendar-input mob-input margin-left-input" type="text" onfocus="(this.type='date')"  id="check_out"> 
-						</div>
-						<div class="col-xs-4">
-							<%= text_field_tag 'room', 'Room', class: 'mob-input-small' %>
-						</div>
-						<div class="col-xs-4">
-							<%= text_field_tag 'adult', 'Adult', class: 'mob-input-small marg-left-adult' %>
-						</div>
-						<div class="col-xs-4">
-							<%= text_field_tag 'child', 'Child', class: 'mob-input-small marg-left-child' %>
-						</div>
-						<div class="col-xs-12">
-							<%= submit_tag "SEARCH", class: "btn-search" %>	
-						</div>
-					<% end %>
-				</div>
-			</div>
-		</div>
-	</div> -->
 </div>
 
 

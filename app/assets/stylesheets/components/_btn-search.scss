@@ -52,15 +52,20 @@
   and (min-width: 768px)
   and (max-width: 990px){
      .btn-search{
-        margin-top: 6px;
+        position: relative;
+        top: 10px;
+        width: 619px;
+        height: 42px;
+        font-size: 21px;
     }
   }
 
-// @media only screen 
-//   and (min-width: 321px)
-//   and (max-width: 767px){
-//     .btn-search{
-//         width: 319px;
-//         margin-top: 6px;
-//     }
-// }
+@media only screen 
+  and (min-width: 992px)
+  and (max-width: 1439px){
+  .btn-search{
+        width: 168px;
+       font-size: 16px;
+    }
+
+}
