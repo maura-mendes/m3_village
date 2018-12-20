@@ -6,6 +6,6 @@ class PagesController < ApplicationController
   end
 
   def accommodation
-  
+  	@rooms = Room.all
   end
 end

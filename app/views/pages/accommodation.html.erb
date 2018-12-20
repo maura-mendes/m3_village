@@ -30,6 +30,115 @@
 		</div>	
 	</div>
 </div>
+<div class="wrapper-stay-relexed">
+	<div class="container">
+		<h4>Stay relaxed. Stay productive. Stay with us.</h4>
+		<hr>
+		<p>We are the perfect choice for travelers who need a simple but pleasing hotel to rest, recharge and get work done. It does not matter how long your stay will be, you will absolutely enjoy the simple effectiveness of things you need most in a hotel: location, comfort and service at the best price.</p>	
+	</div>
+</div> >
+	
+<section class="wrapper-rooms">
+	<div class="container">
+	<h4>Our Rooms</h4>
+	<hr>
+	<p>With a great night’s sleep, and a hot, powerful shower, we have everything you need to get out there rested, refreshed and ready for the day. Our infrastructure offers 3 rooms with private bathroom, air conditioning, a LED flat screen TV, a minibar, a safe-deposit box and a closet.</p>
+	<div class="row">
+			<% @rooms.each do |r| %>
+			<div class="col-xs-12 col-sm-6">
+				<%= render  "rooms/room", room: r %>
+			</div>
+			<% end %>	
+		</div>
+	</div>
+	</div>
+</section>
+<section class="wrapper-rooms-gallery">
+	<div class="container">
+		<div class="row">			
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= asset_path'pillows.jpg' %>);">
+					</div>
+				</div>	
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= asset_path'quadro2.jpg' %>);">
+					</div>					
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= asset_path'towels.jpg' %>);">
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= asset_path'whole-room.jpg' %>);">
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= asset_path'quadros-resized.jpg' %>);">
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= asset_path'couch.jpg' %>);">
+					</div>					
+				</div>					
+		</div>	
+	</div>
+	<div class="foodrinks-button">
+		<%= render 'shared/btn-foodrinks' %>
+	</div>
+</section>
+<section class="wrapper-services-descrition">
+	<div class="container">
+		<hr>
+		<div class="row">
+			<div class="col-xs-6">
+				<div class="card-pub-content">
+					<h5>Your sleep is our priority.</h5>
+					<p><span class="card-pub-description">Sleep quality is assured with Paraíso mattresses from its Royal Organic Collection. An independent pocket spring technology and a 3D fabric knit made of organic cotton that provides a compelling delicate touch and a feeling of extreme softness and comfort will definitely ensure you maximum comfort during your stay.</span></p>	
+				</div>
+				
+			</div>
+			<div class="col-xs-6">
+				<div class="card-pub" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= asset_path'sleeping.jpg' %>);">
+				</div>
+				
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-xs-6">
+				<div class="card-pub-content">
+					<h5>Treat yourself royally.</h5>
+					<p><span class="card-pub-description">An energizing and invigorating shower that recreates the effect of a warm and gentle rain cascading down your body may just be the perfect way to pamper yourself. At Lyz, we redefine the shower experience with a cool shower system that features a rain shower head and a wand hand shower, and plenty of water pressure. We also include fluffy soft towels and premium toiletries.</span></p>	
+				</div>
+				
+			</div>
+			<div class="col-xs-6">
+				<div class="card-pub" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= asset_path'shower.jpg' %>);">
+				</div>
+				
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-xs-6">
+				<div class="card-pub-content">
+					<h5>High-speed connection is not a luxury. It is a necessity</h5>
+					<p><span class="card-pub-description">Connectivity has become a necessity for many of us. That's why we provide free high-speed internet access in your room and throughout the hotel so that you can download that important presentation, connect with your friends, or just maket the most of the Web.</span></p>	
+				</div>
+				
+			</div>
+			<div class="col-xs-6">
+				<div class="card-pub" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= asset_path'phone.jpg' %>);">
+				</div>
+				
+			</div>
+		</div>
+
+	</div>
+
+	<br>
+	<br>
+</section>
 
 
 

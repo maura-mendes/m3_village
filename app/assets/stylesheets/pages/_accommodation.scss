@@ -1,5 +1,6 @@
+// accomodation banner//
 .banner-accomodation{
-	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0, .3) ), image-url('m3-room3.jpg');
+	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0, .3) ), image-url('Room2.jpg');
 	background-size: cover;
  	height: 100vh;
  	display: flex;
@@ -77,6 +78,128 @@
 .color-orange{
 	color: $orange;
 }
+
+//stay relaxed section//
+
+.wrapper-stay-relexed{
+	background: #f4f4f5;
+	padding: 10px;
+}
+.wrapper-stay-relexed h4{
+	font-family: Roboto;
+	font-weight: bold;
+	font-size: 26px;
+	color: rgba(24, 24, 24, 0.8);
+	text-align: center;
+	margin-top: 59px;
+	margin-bottom: 28px;
+}
+.wrapper-stay-relexed p{
+	font-family: Open Sans;
+	font-size: 17px;
+	text-align: justify;
+	color: rgba(24, 24, 24, 0.65);
+	letter-spacing: 0.03em;
+	margin-top: 27px;
+  	line-height: 1.9;
+}
+
+//rooms section//
+
+.wrapper-rooms{
+	background: #FFFFFF !important;
+
+  	padding-bottom: 53px;
+}
+
+.wrapper-rooms h4{
+	font-family: Roboto;
+	font-weight: bold;
+	font-size: 26px;
+	color: rgba(24, 24, 24, 0.8);
+	text-align: center;
+	margin-top: 42px;
+	margin-bottom: 10px;
+}
+
+.wrapper-rooms p{
+	font-family: Open Sans;
+	font-size: 17px;
+	text-align: center;
+	color: rgba(24, 24, 24, 0.70);
+	letter-spacing: 0.03em;
+  	margin-top: 11px;
+  	margin-bottom: 34px;
+}
+
+.wrapper-rooms-gallery{
+	background: #FFFFFF;
+	padding-top: 44px;
+	padding-bottom: 45px;
+}
+
+.wrapper-rooms-gallery h4{
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 26px;
+  color: rgba(24, 24, 24, 0.8);
+  text-align: center;
+  margin-top: 0px;
+ 
+}
+
+.wrapper-rooms-gallery p{
+  font-family: Open Sans;
+  font-size: 17px;
+  text-align: center;
+  color: rgba(24, 24, 24, 0.65);
+  letter-spacing: 0.03em;
+  margin-top: 11px;
+  margin-bottom: 34px;
+  line-height: 1.9;
+}
+
+.wrapper-services-descrition{
+	background: #FFFFFF;
+	h4{
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 26px;
+    color: rgba(24, 24, 24, 0.8);
+    text-align: center;
+    margin-top: 59px;
+    margin-bottom: 28px;
+  }
+  .card-pub-content{
+    padding-top: 52px;
+    h5{
+      font-family: Roboto;
+      font-weight: bold;
+      font-size: 24px;
+      color: $orange;
+      text-align: left;
+      margin-bottom: -8px;  
+      }
+    p{
+      font-family: Open Sans;
+      font-size: 17px;
+      text-align: justify;
+      color: rgba(24, 24, 24, 0.65);
+      letter-spacing: 0.03em;
+      margin-top: 25px;
+      line-height: 1.9;
+    }
+  }
+  & hr{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: 0;
+    border-top: 1px solid #e0e0e0;
+  }
+}
+
+
+//media queries//
 
 @media only screen 
   and (max-width: 320px){
