@@ -1,14 +1,35 @@
+<div class="upper-page-banner">
+</div>
 <div class="container">
-	<h1>hi there</h1>
-	<div class="row">
-	<% @rooms.each do |r| %>
-	<div class="col-xs-12 col-sm-6">
-		<%= render  "room", room: r %>
+	<div class="search-results-box">
+		<hr>
+		<div class="results-box-headers">
+			<p>Recommended accommodation</p>
+			<p><span class="color-orange">Best price guaranteed. Free cancelation up to 4 days</span> </p>
+		</div>
+		<% @rooms.each do |r| %>
+			<div class="search-card">
+				<%= image_tag r.room_attachments.first.photo, class: "room-image" %>
+				<div class="search-card-body">
+					<h4>Double room</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+					<div class="room-details">
+							 <span class="room-capacit"><%= image_tag "people.png", id: "icon-people" %>sleeps <%= r.capacity %> </span>
+							 <span class="bed"><%= r.size %>M2</span>
+					
+					</div>
+				</div>
+				<div class="price-section">
+					<h4>$145,00</h4>
+					<p>1 night: $145,00</p>
+					<%= render 'shared/btn-book-now'  %>
+				</div>
+			</div>
+			
+			<hr>
+		<% end %>
+
 	</div>
-	<% end %>	
+		
+	
 </div>
-</div>
-
-
-
-

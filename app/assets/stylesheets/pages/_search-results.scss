@@ -1,0 +1,61 @@
+.upper-page-banner{
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.4) ), image-url('hotel-pillows.jpg');
+ 	background-size: cover;
+ 	height: 140px;
+ 	background-position: center;
+}
+
+.results-box-headers{
+	display: flex;
+    font-family: Roboto;
+    justify-content: space-between;
+    font-size: 15px;
+    color: #767473;
+}
+
+.color-orange{
+	color: $orange;
+}
+
+.search-card{
+	display: flex;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.room-image{
+	// border-radius: 10px;
+ //  margin-right: 20px;
+ //  width: 175px;
+    height: 147px;
+    width: 223px;
+    margin-right: 40px;
+}
+
+.search-card-body{
+	flex: 1 1 auto;
+	h4{
+    	margin-top: 0;
+    	font-weight: 500;
+    	color:  #B5743B;;
+    	font-size: 20px;
+    }
+    p{
+    	margin-bottom: 0;
+    	font-weight: lighter;
+    	color: rgba(24, 24, 24, 0.65);
+    	font-size: 17px;
+    }
+}
+
+.room-details{
+	color: $orange;
+	font-weight: 500;
+	.bed{
+		position: absolute;
+		left: 50%
+	}
+	.room-capacit{
+
+	}
+}
