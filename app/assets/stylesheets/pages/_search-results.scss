@@ -5,12 +5,18 @@
  	background-position: center;
 }
 
+.search-results-box{
+	hr{
+		border-top: 1px solid #e8e8e8;
+	}
+}
 .results-box-headers{
 	display: flex;
     font-family: Roboto;
     justify-content: space-between;
     font-size: 15px;
     color: #767473;
+    margin-bottom: 24px;
 }
 
 .color-orange{
@@ -21,6 +27,8 @@
 	display: flex;
     align-items: center;
     border-radius: 3px;
+    position: relative;
+
 }
 
 .room-image{
@@ -34,23 +42,30 @@
 
 .search-card-body{
 	flex: 1 1 auto;
+
 	h4{
     	margin-top: 0;
     	font-weight: 500;
-    	color:  #B5743B;;
+    	color:  #B5743B;
     	font-size: 20px;
+    	position: absolute;
+    	top: 1px;
     }
     p{
     	margin-bottom: 0;
     	font-weight: lighter;
     	color: rgba(24, 24, 24, 0.65);
     	font-size: 17px;
+    	text-align: justify;
+    	    margin-top: 29px;
+
     }
 }
 
 .room-details{
 	color: $orange;
 	font-weight: 500;
+	margin-top: 4px;
 	.bed{
 		position: absolute;
 		left: 50%
@@ -58,4 +73,51 @@
 	.room-capacit{
 
 	}
+}
+
+.price-section{
+	margin-left: 40px;
+	flex: 0 0 200px;
+	h4{
+		color: #B5743B;
+	    font-weight: 500;
+	    font-size: 20px;
+	    margin-top: 0;
+	    position: absolute;
+    	top: 1px;
+	}
+	p{
+		font-size: 18px;
+    	color: #767473;
+    	font-weight: lighter;
+    	    margin-bottom: 29px;
+	}
+}
+
+.btn-search-card{
+	width: 200px;
+    height: 50px;
+    // background: $orange;
+    // background-image: linear-gradient(rgba($orange, 0.8), rgba($orange, 0.2));
+    background-image: linear-gradient(#F6B072, #F9C08E);
+    // background-color: linear-gradient(rgba(231, 139, 72, 0), rgba(231, 139, 72, 0) );
+    border-radius: 4px;
+    
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-decoration: none;
+    list-style: none;
+    padding: 13px 54px;
+    border: 1px solid #959090;
+    &:hover{
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    &:active{
+        text-decoration: none;
+    }
 }

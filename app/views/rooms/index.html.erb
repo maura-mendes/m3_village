@@ -5,7 +5,7 @@
 		<hr>
 		<div class="results-box-headers">
 			<p>Recommended accommodation</p>
-			<p><span class="color-orange">Best price guaranteed. Free cancelation up to 4 days</span> </p>
+			<p><span class="color-orange"><i class="fas fa-check">&nbsp;&nbsp;</i>Best price guaranteed. Free cancelation up to 4 days</span> </p>
 		</div>
 		<% @rooms.each do |r| %>
 			<div class="search-card">
@@ -22,7 +22,7 @@
 				<div class="price-section">
 					<h4>$145,00</h4>
 					<p>1 night: $145,00</p>
-					<%= render 'shared/btn-book-now'  %>
+					<%= link_to "BOOK NOW", "#", class: "btn-search-card" %>
 				</div>
 			</div>
 			
