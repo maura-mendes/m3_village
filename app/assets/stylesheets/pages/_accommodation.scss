@@ -202,7 +202,7 @@
 }
 
 
-//media queries//
+//media queries banner//
 
 @media only screen 
   and (max-width: 320px){
@@ -277,26 +277,162 @@
 
 
 
+//media queries -  rest of the page//
 
-// @media only screen 
-//   and (min-width: 1024x)
-//   and (max-width: 1439px){
-// 	.search-header{
-// 		left: 0px;
-//     	font-size: 21px;
-// 	}
-// 	.search-header2{
-// 		left: 36px;
-//     	font-size: 24px;
-//     	top: 18px;
-// 	}
-// 	.color-orange{
-// 		font-size: 24px;
-// 	    left: 39px;
-// 	    top: 18px;
-// 	}
+@media only screen 
+  and (max-width: 320px){
+  	.wrapper-stay-relexed h4{
+  		font-size: 19px;
+   		margin-top: 26px;
+    	margin-bottom: -7px;
+  	}
+  	.wrapper-stay-relexed p{
+  		font-size: 13px;
+  		letter-spacing: 0.00em;
+  		margin-top: -6px;
+  	}
+  	.wrapper-rooms h4{
+  		font-size: 19px;
+   		margin-top: 26px;
+    	margin-bottom: -7px;
+  	}
+  	.wrapper-rooms p{
+  		font-size: 13px;
+  		letter-spacing: 0.00em;
+  		margin-top: 12px;
+  		text-align: justify;
+      margin-bottom: 25px;
+  	}
+    .wrapper-rooms-gallery{
+        margin-top: -27px;
+    }
+    
+    .wrapper-services-descrition {
+      h4{
+        font-size: 19px;
+        margin-top: -17px;
+        margin-bottom: -6px;
+      } 
+      .card-pub-content{
+      	padding-top: 0px; 
+         height: 160px;
+    	overflow: auto; 
+    	text-overflow: ellipsis;
+      & h5{
+        font-size: 17px;
+        margin-bottom: 0;
+        margin-top: 5px;
+        margin-bottom: 7px;
+      }
+      & p{
+        font-size: 13px;
+        letter-spacing: 0.00em;
+        line-height: 1.4;
+        margin-top: 0;
+        text-overflow: ellipsis;
+      }
+    } 
+  }
+    
+    
+}
+  // large mobile
+@media only screen 
+  and (min-width: 321px)
+  and (max-width: 767px){
+  	.wrapper-stay-relexed h4{
+  		font-size: 19px;
+   		margin-top: 26px;
+    	margin-bottom: -7px;
+  	}
+  	.wrapper-stay-relexed p{
+  		font-size: 14px;
+  		letter-spacing: 0.00em;
+  		margin-top: -6px;
+  	}
+  	.wrapper-rooms h4{
+  		font-size: 19px;
+   		margin-top: 26px;
+    	margin-bottom: -7px;
+  	}
+  	.wrapper-rooms p{
+  		font-size: 14px;
+  		letter-spacing: 0.00em;
+  		margin-top: 10px;
+  		text-align: justify;
+  		
+  	}
+     .wrapper-rooms-gallery{
+       
+      margin-top: -11px;
+      margin-bottom: 13px;
+    }
+    
+    .wrapper-services-descrition {
+      h4{
+        font-size: 19px;
+        margin-top: -17px;
+        margin-bottom: -6px;
+      }
+      .card-pub-content{
+        padding-top: 0px; 
+        height: 160px;
+    	overflow: auto; 
+    	text-overflow: ellipsis; 
+        h5{
+          font-size: 17px;
+          margin-bottom: 0;
+          margin-top: 5px;
+          margin-bottom: 7px;
+        }
+        p{
+          font-size: 13px;
+          letter-spacing: 0.00em;
+          line-height: 1.4;
+          margin-top: 0;
+        }
+      } 
+    }
 
-// }
+
+}
+
+
+
+
+// ipad 
+  @media only screen 
+  and (min-width: 768px)
+  and (max-width: 990px){
+  	.wrapper-stay-relexed h4{
+  		font-size: 26px;
+    	margin-top: 46px;
+    	margin-bottom: 26px;
+  	}
+  	.wrapper-stay-relexed p{
+  		font-size: 18px;
+    	letter-spacing: 0.03em;
+    	margin-top: 24px;
+  	}
+  	.wrapper-rooms h4{
+  		font-size: 26px;
+    	margin-top: 46px;
+    	margin-bottom: 26px;
+  	}
+  	.wrapper-rooms p{
+  		font-size: 18px;
+    	letter-spacing: 0.03em;
+    	margin-top: 24px;
+    	text-align: justify;
+  	}
+  	.wrapper-services-descrition{
+  		.card-pub-content{
+  			padding-top: 18px;
+  		}
+  		
+  	}
+
+  }
 
 
 
