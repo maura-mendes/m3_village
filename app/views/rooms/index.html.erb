@@ -1,7 +1,17 @@
+
 <div class="upper-page-banner">
 </div>
+<div class="container larger-container">
+	<div class="search-form-border">
+		<div class="row">
+				<%= render 'shared/search-form' %>
+		</div>
+	
+	</div>
+</div>
+
 <div class="container">
-	<div class="search-results-box">
+	<div class="search-results-box hidden-xs">
 		<hr>
 		<div class="results-box-headers">
 			<p>Recommended accommodation</p>
@@ -30,6 +40,19 @@
 		<% end %>
 
 	</div>
+	<div class="hidden-sm hidden-md hidden-lg">
+		<hr>
+		<div class="row">
+			<% @rooms.each do |r| %>
+				<div class="col-xs-12">
+					<%= render  "rooms/mobile-card", room: r %>
+				</div>
+				<hr>
+			<% end %>	
+		</div>
 		
+	</div>	
+	<%= link_to "https://www.google.com/", class: "card-link" do %>
+  	<% end %>
 	
 </div>

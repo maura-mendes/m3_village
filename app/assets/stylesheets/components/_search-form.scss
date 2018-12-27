@@ -1,3 +1,4 @@
+// accomodation page
 .search-content{
 	display: flex;
     justify-content: space-around;
@@ -42,6 +43,15 @@ input{
   	.search-content{
   		margin-top: 30px;
   	}
+    //partial serach form- search results page
+    .input-form2{
+      width: 100%;
+      margin-bottom: 15px;
+      border: 1px solid;
+    } 
+    .calendar{
+        background-size: 11% 70%;
+    }
   }
 
 @media only screen 
@@ -60,6 +70,16 @@ input{
   	.search-content{
   		margin-top: 41px;
   	}
+
+    //partial serach form- search results page
+    .input-form2{
+      width: 100%;
+      margin-bottom: 15px;
+      border: 1px solid;
+    } 
+    .calendar{
+        background-size: 11% 70%;
+    }
   }
 
 @media only screen 
@@ -82,6 +102,16 @@ input{
   	.calendar-input{
   		background-size: 12% 70%;
   	}
+
+    //partial serach form- search results page
+    .input-form2{
+      width: 100%;
+      margin-bottom: 15px;
+      border: 1px solid;
+    } 
+    .calendar{
+        background-size: 11% 70%;
+    }
   }
 
 @media only screen 
@@ -93,6 +123,31 @@ input{
  	}
 
 }
+
+//partial - search results page form
+
+@media only screen 
+  and (max-width: 320px){
+
+  }
+
+@media only screen 
+  and (min-width: 1440px){
+      .larger-input{
+    width: 157px;
+  }
+
+  .results-search-content{
+    margin: 39px 21px 39px 21px;
+     input{
+    width: 201px;
+  }
+  }
+  
+ 
+
+}
+
 
 
 

@@ -1,0 +1,72 @@
+// mobile search results card
+
+.mob-search-results{
+	height: 413px;
+	position: relative;
+
+}
+
+.mob-room-image{
+	height: 200px;
+    width: auto;
+    background-size: cover;
+}
+
+.mob-room-name{
+	font-family: Roboto;
+	margin-top: 11px;
+    font-weight: bold;
+    color: #181818;
+    
+    font-size: 19px;
+}
+
+.mob-room-details{
+	display: flex;
+	justify-content: space-between;
+	font-weight: 700;
+	color: #E78B48;
+	font-family: Roboto;
+	font-size: 14px;
+	margin-top: -3px;
+	img{
+
+		height: 21px;
+	}
+}
+
+.mob-price-section{
+	// display: flex;
+ //    justify-content: space-between;
+ //    align-items: center;
+	& .price-per-night{
+		font-size: 19px;
+	    font-family: Roboto;
+	    font-weight: 500;
+
+	}
+	& .total-price{
+		color: #B5743B;
+    	font-size: 15px;
+    	font-weight: lighter;
+	}
+}
+
+
+@media only screen 
+  and (min-width: 321px)
+  and (max-width: 767px){
+	.mob-room-name{
+		font-size: 21px;
+	}
+
+	.mob-room-details{
+		font-size: 16px;
+	}
+	.price-per-night{
+		font-size: 21px;
+	}
+  }
+
+
+
