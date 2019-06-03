@@ -1,19 +1,20 @@
 // accomodation page
 .search-content{
-	display: flex;
+	  display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 46px;
+    input{
+      background: transparent;
+      color: rgba(149, 144, 144, 0.9);
+      border: 2px solid rgba(149, 144, 144, 0.9);
+      height: 39px;
+      margin-right: 8px;
+      padding: 10px 10px;
+    }
 }
 
-input{
-	background: transparent;
-    color: rgba(149, 144, 144, 0.9);
-    border: 2px solid rgba(149, 144, 144, 0.9);
-    height: 39px;
-    margin-right: 8px;
-    padding: 10px 10px;
-}
+
 
 
 .special_input{
@@ -30,18 +31,19 @@ input{
 
 @media only screen 
   and (max-width: 320px){
-  	input{
-  		width: 137px;
-    	font-size: 14px;
-    	margin-bottom: 2px;
-    	margin-right: 0px;
-  	}
+  	
   	.special_input{
   		width: 91px;
   		margin-right: -2px;
   	}
   	.search-content{
   		margin-top: 30px;
+      input{
+        width: 137px;
+        font-size: 14px;
+        margin-bottom: 2px;
+        margin-right: 0px;
+      }
   	}
     //partial serach form- search results page
     .input-form2{
@@ -57,18 +59,19 @@ input{
 @media only screen 
   and (min-width: 321px)
   and (max-width: 767px){
-  	input{
-  		width: 161px;
-    	font-size: 16px;
-    	margin-bottom: 2px;
-    	margin-right: 0px;
-  	}
+  	
   	.special_input{
   		width: 107px;
   		margin-right: -2px;
   	}
   	.search-content{
   		margin-top: 41px;
+      input{
+        width: 161px;
+        font-size: 16px;
+        margin-bottom: 2px;
+        margin-right: 0px;
+      }
   	}
 
     //partial serach form- search results page
@@ -88,13 +91,14 @@ input{
   	.search-content{
   		margin-right: -125px;
   		margin-top: 62px;
+      input{    
+        width: 307px;
+        height: 42px;
+        margin-right: 0px;
+        font-size: 19px;
+      }
   	}
-  	input{    
-  		width: 307px;
-	    height: 42px;
-	    margin-right: 0px;
-	    font-size: 19px;
-  	}
+  	
   	.special_input{
   		width: 203px;
 	    margin-top: 6px;
@@ -117,19 +121,18 @@ input{
 @media only screen 
   and (min-width: 992px)
   and (max-width: 1439px){
- 	input{
- 		width: 138px;
-    	font-size: 14px;
- 	}
+ .search-content{
+    input{
+      width: 138px;
+      font-size: 14px;
+    }
+ }
+  
+ 	
 
 }
 
 //partial - search results page form
-
-@media only screen 
-  and (max-width: 320px){
-
-  }
 
 @media only screen 
   and (min-width: 1440px){
@@ -140,8 +143,8 @@ input{
   .results-search-content{
     margin: 39px 21px 39px 21px;
      input{
-    width: 201px;
-  }
+      width: 201px;
+     }
   }
   
  

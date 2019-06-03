@@ -1,0 +1,70 @@
+<div class="upper-page-banner">
+</div>
+
+<div style="margin-top: 10px;">
+	<h1 style="font-size: 10px;">hey there</h1>
+</div>
+
+<div class="">
+	Your name is <%= @name1 %><br>
+	Your email is <%= @email1 %><br>
+	<pre>
+		<% params.each do |key, value| %>
+			<%= key + "==>" + value %>
+		<% end %>
+	</pre>
+	
+
+	<%= @error_msg %>
+	<%= form_for  calculator_path, :method => "POST" do %>
+		<%= label_tag :name, "enter your full name" %>
+		<%= text_field_tag :name, @name %> <br>
+		<%= label_tag :email, "enter your email address" %>
+		<%= email_field_tag :email, @email %><br>
+		<%= label_tag :question, "Enter your question: " %>
+		<%= text_area_tag :question, @question, :size => "50x10" %> <br>
+		
+		<%= check_box_tag :newslater, "newsleter", @newsleter %>
+		<%= label_tag :newslater, "Subscribe to my newslater: " %><br>
+		
+		<%= radio_button_tag :gender, "male", @male %>Male<br>
+
+		<%= radio_button_tag :gender, "female", @female %>Female<br>
+
+		<%= select_tag :product1, options_for_select( 
+								[
+									['Skis', 0], 
+									['Poles', 1], 
+									['Boots', 2],
+									 ], @product1) %>
+
+		<%= submit_tag "Asque Question" %>
+
+	<%end %>
+</div>
+
+<p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+ 
+<%= form_tag calculator_path, method: :post do %>
+	<%= label_tag "Name: " %>
+	<%= text_field_tag 'Name', @name %><br>
+	<%= label_tag 'email' ,"Email Adress: " %>
+		<%= email_field_tag 'email', @email, :placeholder=>"Enter your email address" %><br>
+
+		<%= label_tag 'age' ,"Age: " %>
+		<%= number_field_tag 'age', @age, :min => 13, :max => 150 %><br>
+		<%#= select_tag :product, options_for_select(@products.map{ |value| [value, value]}, @selected_product) %>
+		<%= select_tag :product, options_for_select(@products, @selected_product) %><br>
+		<%= label_tag :food_salad, "Salad" %>
+		<%= radio_button_tag :food, :salad, @salad %><br>
+		<%= label_tag :food_main, "Main Dish" %>
+		<%= radio_button_tag :food, :main, @main %><br>
+		<%= label_tag :food_desert, "Desert" %>
+		<%= radio_button_tag :food, :desert, @desert %><br>
+	<%= submit_tag 'Submit your question' %>
+<% end %>
+
+
+	<%= params.inspect %>
+
+

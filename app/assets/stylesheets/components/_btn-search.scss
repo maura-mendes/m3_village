@@ -1,32 +1,35 @@
-.btn-search{
-	width: 184px;
-    height: 40px;
-    // background: $orange;
-    // background-image: linear-gradient(rgba($orange, 0.8), rgba($orange, 0.2));
-    background-image: linear-gradient(#F6B072, #F9C08E);
-    // background-color: linear-gradient(rgba(231, 139, 72, 0), rgba(231, 139, 72, 0) );
-    border-radius: 1px;
-    color: #FFFFFF;
-    text-align: center;
-    font-family: Open Sans;
-    font-weight: 400;
-    font-size: 19px;
-    line-height: 25px;
-    text-decoration: none;
-    list-style: none;
-    border: none;
-    
-    padding: 6px 54px;
-    position: relative;
-   
-    &:hover{
-        text-decoration: none;
-        color: #FFFFFF;
-    }
-    &:active{
-        text-decoration: none;
-    }
+.search-content{
+  .btn-search{
+    width: 184px;
+      height: 40px;
+      // background: $orange;
+      // background-image: linear-gradient(rgba($orange, 0.8), rgba($orange, 0.2));
+      background-image: linear-gradient(#F6B072, #F9C08E);
+      // background-color: linear-gradient(rgba(231, 139, 72, 0), rgba(231, 139, 72, 0) );
+      border-radius: 1px;
+      color: #FFFFFF;
+      text-align: center;
+      font-family: Open Sans;
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 25px;
+      text-decoration: none;
+      list-style: none;
+      border: none;
+      
+      padding: 6px 54px;
+      position: relative;
+     
+      &:hover{
+          text-decoration: none;
+          color: #FFFFFF;
+      }
+      &:active{
+          text-decoration: none;
+      }
+  }
 }
+  
 
 .btn-search-results{
   height: 40px;
@@ -59,11 +62,14 @@
 
 @media only screen 
   and (max-width: 320px){
-    .btn-search{
+    .search-content{
+      .btn-search{
         width: 279px;
         height: 35px;
         margin-top: 2px;
+     }
     }
+    
     .btn-search-results{
         width: 100%;
       }
@@ -72,11 +78,14 @@
 @media only screen 
   and (min-width: 321px)
   and (max-width: 767px){
-    .btn-search{
+    .search-content{
+       .btn-search{
         width: 327px;
         height: 35px;
         margin-top: 2px;
+      }
     }
+   
     .btn-search-results{
         width: 100%;
       }
@@ -85,25 +94,32 @@
 @media only screen 
   and (min-width: 768px)
   and (max-width: 990px){
-     .btn-search{
+    .search-content{
+      .btn-search{
         position: relative;
         top: 10px;
         width: 619px;
         height: 42px;
         font-size: 21px;
-      //searchj results form- search results page
+        //searchj results form- search results page
+      }
+    }
+     
       .btn-search-results{
         width: 100%;
       }
-    }
+    
   }
 
 @media only screen 
   and (min-width: 992px)
   and (max-width: 1439px){
-  .btn-search{
+  .search-content{
+    .btn-search{
         width: 168px;
-       font-size: 16px;
+       font-size: 16 px;
     }
+  }
+ 
 
 }
