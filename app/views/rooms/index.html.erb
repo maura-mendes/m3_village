@@ -1,79 +1,96 @@
-
-<div class="upper-page-banner">
-</div>
-<div class="container">
-	<div class="search-form-border">
-		<%= render 'shared/search-form' %>
+<div>
+	
+	<div class="upper-page-banner">
 	</div>
-</div>
+	<div class="container">
+		<div class="search-form-border">
+			<%= render 'shared/search-form' %>
+		</div>
+	</div>
 
-<div class="container">
-	<div class="search-results-box hidden-xs">
-		<%if @rooms.present? %>
-			<hr>
-			<div class="results-box-headers">
-				<p>Recommended accommodation</p>
-				<p><span class="color-orange"><i class="fas fa-check">&nbsp;&nbsp;</i>Best price guaranteed. Free cancelation up to 4 days</span> </p>
-			</div>
-			<% @rooms.each do |r| %>
-				<div class="search-card">
-					<%= image_tag r.room_attachments.first.photo, class: "room-image" %>
-					<div class="search-card-body">
-						<h4>Double room</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-						<div class="room-details">
-								 <span class="room-capacit"><%= image_tag "people.png", id: "icon-people" %>sleeps <%= r.capacity %> </span>
-								 <span class="bed"><%= r.size %>M2</span>
-						
+	<div class="container">
+		<div class="search-results-box hidden-xs">
+			<%if @rooms.present? %>
+				<hr>
+				<div class="results-box-headers">
+					<p>Recommended accommodation</p>
+					<p><span class="color-orange"><i class="fas fa-check">&nbsp;&nbsp;</i>Best price guaranteed. Free cancelation up to 4 days</span> </p>
+				</div>
+				<% @rooms.each do |r| %>
+					<div class="search-card">
+						<%= image_tag r.room_attachments.first.photo, class: "room-image" %>
+						<div class="search-card-body">
+							<h4>Double room</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+							<div class="room-details">
+									 <span class="room-capacit"><%= image_tag "people.png", id: "icon-people" %>sleeps <%= r.capacity %> </span>
+									 <span class="bed"><%= r.size %>M2</span>
+							
+							</div>
+						</div>
+						<div class="price-section">
+							<h4>$145,00</h4>
+							<p>1 night: $145,00</p>
+							<%= link_to "BOOK NOW", "#", class: "btn-search-card" %>
 						</div>
 					</div>
-					<div class="price-section">
-						<h4>$145,00</h4>
-						<p>1 night: $145,00</p>
-						<%= link_to "BOOK NOW", "#", class: "btn-search-card" %>
+					
+					<hr>
+					<div class="info">
+						<p>Photos are representative of each type of room, and there is no guarantee that your room will be the same as the photo.</p>
+						<p>Currency data provided by XE, a third party currency conversion provider, using live mid-market rates. This information is offered for informational purposes only, and does not reflect the rate you will pay to the hotel or the currency in which such payment will be made.</p>
+					</div>
+
+				<% end %>
+			<% else %>
+				<div class="unavailability-msg">
+					<h4 class="error-msg">Sorry! There's no rooms available for these dates</h4>
+					<p>Please call the Guesthouse on +258 81 77 844 or email hello@m3village.com </p>
+				</div>	
+			 	
+			<% end %>
+
+		</div>
+		<div class="hidden-sm hidden-md hidden-lg">
+			<%if @rooms.present? %>
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="mob-results-box-headers">
+						<p>Recommended accommodation:</p>
+					</div>
+					
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<% @rooms.each do |r| %>
+					<div class="col-xs-12">
+						<%= render  "rooms/mobile-card", room: r %>
+						<hr>
+					</div>
+					
+				<% end %>	
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="price-guaranteed">
+						<p><span class="color-orange"><i class="fas fa-check">&nbsp;&nbsp;</i>Best price guaranteed. Free cancelation up to 4 days</span> </p>
 					</div>
 				</div>
-				
-				<hr>
-			<% end %>
-		<% else %>
+			</div>
+			<% else %>
 			<div class="unavailability-msg">
 				<h4 class="error-msg">Sorry! There's no rooms available for these dates</h4>
 				<p>Please call the Guesthouse on +258 81 77 844 or email hello@m3village.com </p>
 			</div>
-		 	
-		<% end %>
+			
+		</div>	
 
-	</div>
-	<div class="hidden-sm hidden-md hidden-lg">
-		<div class="row">
-			<div class="col-xs-12">
-				<div class="mob-results-box-headers">
-					<p>Recommended accommodation:</p>
-				</div>
-				
-			</div>
-		</div>
-		<hr>
-		<div class="row">
-			<% @rooms.each do |r| %>
-				<div class="col-xs-12">
-					<%= render  "rooms/mobile-card", room: r %>
-					<hr>
-				</div>
-				
-			<% end %>	
-		</div>
-		<div class="row">
-			<div class="col-xs-12">
-				<div class="price-guaranteed">
-					<p><span class="color-orange"><i class="fas fa-check">&nbsp;&nbsp;</i>Best price guaranteed. Free cancelation up to 4 days</span> </p>
-				</div>
-			</div>
-		</div>
+
+		<% end %>
+		<%#= link_to "https://www.google.com/", class: "card-link" do %>
+	  	<%# end %>
 		
-	</div>	
-	<%#= link_to "https://www.google.com/", class: "card-link" do %>
-  	<%# end %>
-	
+	</div>
+
 </div>
