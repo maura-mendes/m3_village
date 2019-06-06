@@ -9,13 +9,82 @@
 			<%= render 'shared/btn-book-now'  %>
 		</div>
 	</div>
-	<div class="search-bar">
+
+	<!-- Mobile search engine -->
+	<div class="container hidden-sm hidden-md hidden-lg">
+		<div class="mob-form-container">
+			<div class="row">
+				<div class="col-xs-12 hidden-md hidden-lg">
+					<h4>Search your <span class="color-orange">rooms</span></h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="form-container">
+						<%= simple_form_for @booking, method: :get, :url => {:controller => 'rooms', :action => 'index'} do |f| %>
+						<div class="row">
+							<div class="col-xs-12">
+								<%= f.input :check_in_date, as: :string, required: false, label: false, input_html: {class: "datepicker input-icon-calendar"}, placeholder: "Check in" %>
+							</div>
+							<div class="col-xs-12">
+								<%= f.input :check_out_date, as: :string, required: false, label: false, input_html: {class: "datepicker input-icon-calendar"}, placeholder: "Check out" %>
+							</div>
+							<div class="col-xs-12">
+								<%= f.input :adult_guest, label: false,input_html: { class: 'input-icon-arrow' }, collection: Booking::ADULT_GUESTS , prompt: "Adult" %>
+							</div>
+							<div class="col-xs-12">
+								<%= f.input :children_guest, label: false,input_html: { class: 'input-icon-arrow' }, collection: Booking::CHILDREN_GUESTS , prompt: "Child" %>
+							</div>
+							<div class="col-xs-12">
+								<%= f.submit "SEARCH", class: "btn btn-search"  %>
+							</div>
+						</div>
+						<% end %>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+	</div>
+
+	
+	<div class="search-bar hidden-xs">
 		<div class="row">
-			<div class="col-sm-2 hidden-xs hidden-sm">
+			<div class="col-xs-12 hidden-md hidden-lg">
+				<h4>SEARCH YOUR <span class="color-orange">ROOMS</span></h4>
+			</div>
+		</div>
+		<div class="search-bar-content">
+			<div class="col-md-3 hidden-xs hidden-sm">
 				<h4><span class="search-header">SEARCH</span></h4>
 				<h4><span class="search-header2">YOUR</span> <span class=" search-header2 color-orange rooms-header-margin">ROOMS</span></h4>
 			</div>
-			<div class="col-sm-10">
+			
+			<div class="col-md-9">
+				<div class="form-container">
+					<%= simple_form_for @booking, method: :get, :url => {:controller => 'rooms', :action => 'index'} do |f| %>
+					<div class="row">
+						<div class="col-md-2">
+							<%= f.input :check_in_date, as: :string, required: false, label: false, input_html: {class: "datepicker input-icon-calendar"}, placeholder: "Check in" %>
+						</div>
+						<div class="col-md-2">
+							<%= f.input :check_out_date, as: :string, required: false, label: false, input_html: {class: "datepicker input-icon-calendar"}, placeholder: "Check out" %>
+						</div>
+						<div class="col-md-2">
+							<%= f.input :adult_guest, label: false,input_html: { class: 'input-icon-arrow' }, collection: Booking::ADULT_GUESTS , prompt: "Adult" %>
+						</div>
+						<div class="col-md-2">
+							<%= f.input :children_guest, label: false,input_html: { class: 'input-icon-arrow' }, collection: Booking::CHILDREN_GUESTS , prompt: "Child" %>
+						</div>
+						<div class="col-md-2">
+							<%= f.submit "SEARCH", class: "btn btn-search"  %>
+						</div>
+					</div>
+					<% end %>
+				</div>
+			</div>
+			<!-- <div class="col-sm-10">
 				<div class="search-content">
 					<%= form_tag rooms_path, method: :get do %>
 						<input placeholder="Check in " class="calendar-input" type="text" onfocus="(this.type='date')"  id="check_in"> 
@@ -26,10 +95,14 @@
 						<%= submit_tag "SEARCH", class: "btn-search" %>			
 					<% end %>
 				</div>
-			</div>
-		</div>	
+			</div> -->
+		
+		</div>
+		
 	</div>
 </div>
+
+
 <div class="wrapper-stay-relexed">
 	<div class="container">
 		<h4>Stay relaxed. Stay productive. Stay with us.</h4>

@@ -40,24 +40,93 @@
 }
 
 .search-bar{
-	width: 100vw;
+	width: 100%;
 	height: 140px;
 	background: rgba(0, 0, 0, 0.6);
 	position: absolute;
 	top: calc(100vh - 140px);
 	left: 0;
-	// display: flex;
- //    justify-content: space-around;
- 	// p{
- 	// 	top: -123px;
-	 //    left: 20px;
- 	// }
+  // display: flex;
+  // justify-content: space-around;
+  .col-sm-2{
+    padding-left: 0;
+    padding-right: 10px;
+  }
+  form{
+    .form-control{
+      background-color: transparent;
+      color: #959090;
+      border-radius: 0 !important;
+      font-size: 16px;
+    }
+    select {
+      border-radius: 0px !important;
+       -webkit-appearance: none; 
+       -moz-appearance: none;
+       appearance: none;       /* remove default arrow */
+       // background-color: white !important;
+       // background-image: url(...);   /* add custom arrow */
+      option{
+        color: blue !important;
+      }
+    }
+
+  }
+ 
 
 }
 
+
+.search-bar-content{
+  padding-left: 50px;
+}
+
+.form-container{
+  position: relative;
+  top: 47px;
+  // left: 120px;
+}
+
+.btn-search{
+  width: 100%;
+  background: linear-gradient(180deg, #F6B072 0%, #F9C08E 100%);
+  box-shadow: 0px 0px 4px #E68126;
+  border-radius: 0px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  height: 39px;
+  &:hover{
+    background: #d36104;
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  &:active{
+      text-decoration: none;
+  }
+}
+
+.input-icon-calendar{
+      background-image: image-url('calendar-icon.svg') !important;
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: 17% 48%;
+      padding: 6px 37px;
+}
+.input-icon-arrow{
+      background-image: image-url('arrow-icon.png') !important;
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: 13% 48%;
+      
+}
+
 .search-header{
-	position: relative;
-    left: 137px;
+	  position: relative;
+    left: -6px;
     color: rgba(255, 255, 255, 1);
     font-size: 21px;
     top: 28px;
@@ -65,19 +134,37 @@
 }
 
 .search-header2{
-	position: relative;
-    left: 137px;
+	  position: relative;
+    left: 29px;
     color: rgba(255, 255, 255, 1);
-    font-size: 25px;
+    font-size: 23px;
     top: 19px;
     font-weight: 600;
     letter-spacing: 1px;
     
 }
 
+
 .color-orange{
 	color: $orange;
 }
+
+//mobile accomodation banner(form)
+
+.mob-form-container{
+  background: rgba(0, 0, 0, 0.6);
+  height: auto;
+  width: 100%;
+  padding: 10px 0px;
+  h4{
+      color: white;
+      font-size: 16px;
+      margin-top: 4px;
+      margin-bottom: 15px;
+      font-weight: 300;
+    }
+}
+
 
 //stay relaxed section//
 
@@ -111,8 +198,7 @@
 
 .wrapper-rooms{
 	background: #FFFFFF !important;
-
-  	padding-bottom: 53px;
+  padding-bottom: 53px;
 }
 
 .wrapper-rooms h4{
@@ -206,6 +292,12 @@
 
 @media only screen 
   and (max-width: 320px){
+   .banner-accomodation{
+    display: block;
+   } 
+   .header-textbox{
+    padding-top: 150px;
+   }
 	.heading-primary{
 		font-size: 22px;
 		margin: 0;
@@ -217,12 +309,55 @@
 	.search-bar{
 		top: calc(100vh - 200px);
 		height: 200px;
+    h4{
+        color: rgba(255, 255, 255, 1);
+        font-size: 23px;
+        margin-top: 21px;
+        margin-bottom: 5px;
+      }
 	}
+  .search-bar-content{
+    padding-left: 0;
+    margin-top: 17px;
+    // position: relative;
+    // left: 12%;
+  }
+  .form-container{
+    top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .input-icon-calendar{
+     background-size: 7% 48%;
+  }
+  
+  .input-icon-arrow{
+    background-size: 12% 48%;
+  }
+  .color-orange{
+    color: $orange;
+  }
+  form{
+    .form-control{
+      background-color: transparent;
+      color: #959090;
+      border-radius: 0 !important;
+      font-size: 15px;
+    }
+  }
 }
+
 
 @media only screen 
   and (min-width: 321px)
   and (max-width: 767px){
+    .banner-accomodation{
+     display: block;
+    } 
+    .header-textbox{
+     padding-top: 150px;
+    }
   	.heading-primary{
 		font-size: 27px;
 		margin: 0;
@@ -232,27 +367,99 @@
     	font-size: 18px;
 	}
 
-	.search-bar{
-		top: calc(100vh - 230px);
-		height: 230px;
-	}
-  }
+    .search-bar{
+      top: calc(100vh - 200px);
+      height: 200px;
+      h4{
+          color: rgba(255, 255, 255, 1);
+          font-size: 23px;
+          margin-top: 21px;
+          margin-bottom: 5px;
+        }
+    }
+    .search-bar-content{
+      padding-left: 0;
+      margin-top: 17px;
+      // position: relative;
+      // left: 12%;
+    }
+    .form-container{
+      top: 0;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    
+    .input-icon-calendar{
+       background-size: 15% 48%;
+       padding: 6px 44px;
+    }
+    
+    .input-icon-arrow{
+      background-size: 8% 48%;
+     }
+    .color-orange{
+      color: $orange;
+    }
+    form{
+      .form-control{
+        background-color: transparent;
+        color: #959090;
+        border-radius: 0 !important;
+        font-size: 15px;
+      }
+    }
+    .mob-form-container{
+      padding: 22px 0;
+      margin-top: 29px;
+      h4{
+        margin-top: -5px;
+      }
+    }
+}
 
 @media only screen 
   and (min-width: 768px)
   and (max-width: 990px){
   	.search-bar{
-		top: calc(100vh - 280px);
-		height: 280px;
-	}
-	.heading-primary{
-		font-size: 36px;
-		margin: 0;
-	}
-	.header-paragraph{
-    	font-size: 18px;
-	}
+		  top: calc(100vh - 354px);
+		  height: 354px;
+      h4{
+        color: rgba(255, 255, 255, 1);
+        font-size: 23px;
+        margin-top: 21px;
+        margin-bottom: 5px;
+      }
 
+	}
+  	.heading-primary{
+  		font-size: 36px;
+  		margin: 0;
+  	}
+  	.header-paragraph{
+      font-size: 18px;
+  	}
+    .search-bar-content{
+      padding-left: 0;
+      margin-top: 17px;
+      // position: relative;
+      // left: 12%;
+    }
+    .form-container{
+      top: 0;
+      padding-left: 78px;
+      padding-right: 78px;
+    }
+   
+    .input-icon-calendar{
+       background-size: 7% 48%;
+    }
+    
+    .input-icon-arrow{
+      background-size: 6% 48%;
+    }
+    .color-orange{
+      color: $orange;
+    }
 }
 
 
@@ -261,7 +468,7 @@
   and (max-width: 1439px){
   	.search-header{
   		left: 0px;
-        font-size: 18px;
+      font-size: 18px;
   	}
   	.search-header2{
   		left: 27px;
@@ -271,6 +478,22 @@
   		left: 25px;
     	font-size: 19px;
   	}
+
+    .search-bar-form{
+      form{
+        .form-control{
+          font-size: 14px;
+          height: 37px;
+        }
+      }
+    }
+    .input-icon-calendar{
+      background-size: 21% 46%;
+      padding: 5px 23px;
+    }
+    .btn-search{
+      height: 37px;
+    }
 
 
 }

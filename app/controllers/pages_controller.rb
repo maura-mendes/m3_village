@@ -6,7 +6,9 @@ class PagesController < ApplicationController
   end
 
   def accommodation
+    @room = Room.new
   	@rooms = Room.all
+    @booking = Booking.new
   end
 
   def calculator
