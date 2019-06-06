@@ -1,29 +1,22 @@
 <div class="results-search-content">
-	<%= form_tag rooms_path, method: :get do %>
-		<div class="col-xs-12 col-sm-4 col-md-2">
-			<input placeholder="Check in " class="calendar input-form2" type="text" onfocus="(this.type='date')"  id="check_in">
+	
+	<%= simple_form_for @booking, method: :get, :url => {:controller => 'rooms', :action => 'index'} do |f| %>
+	<div class="row">
+		<div class="col-md-2">
+			<%= f.input :check_in_date, as: :string, required: false, label: false, input_html: {class: "datepicker input-icon-calendar", value: @check_in_date}, placeholder: "Check in" %>
 		</div>
-		 
-		<div class="col-xs-12 col-sm-4 col-md-2">
-			<input placeholder="Check out " class=" calendar input-form2" type="text" onfocus="(this.type='date')"  id="check_out">
+		<div class="col-md-2">
+			<%= f.input :check_out_date, as: :string, required: false, label: false, input_html: {class: "datepicker input-icon-calendar", value: @check_out_date}, placeholder: "Check out" %>
 		</div>
-		
-		<div class="col-xs-12 col-sm-4 col-md-2">
-			<%= number_field_tag 'room', nil, in: 1...10, class: 'input-form2', placeholder: 'Rooms' %>
+		<div class="col-md-2">
+			<%= f.input :adult_guest, label: false,input_html: { class: 'input-icon-arrow'}, collection: Booking::ADULT_GUESTS, selected: @adult_guest  %>
 		</div>
-
-		
-		<div class="col-xs-12 col-sm-6 col-md-2">
-			<%= text_field_tag 'adult', 'Adult', class: 'input-form2' %>
+		<div class="col-md-2">
+			<%= f.input :children_guest, label: false,input_html: { class: 'input-icon-arrow'}, collection: Booking::CHILDREN_GUESTS, selected: @children_guest   %>
 		</div>
-		
-		<div class="col-xs-12 col-sm-6 col-md-2">
-			<%= text_field_tag 'child', 'Child', class: 'input-form2' %>
+		<div class="col-md-4">
+			<%= f.submit "CHECK AVAILABILITY", class: "btn btn-search"  %>
 		</div>
-		
-		<div class="col-xs-12 col-sm-12 col-md-2">
-			<%= submit_tag "SEARCH", class: "btn-search-results" %>		
-		</div>
-			
+	</div>
 	<% end %>
 </div>
