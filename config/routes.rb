@@ -2,7 +2,9 @@ Rails.application.routes.draw do
  
   devise_for :users
   root to: 'pages#home'
-  get 'pages/accommodation'
+  get 'accommodation',       to: 'pages#accommodation', as: 'accommodation'
+  get 'contact_us',       to: 'pages#contact_us', as: 'contact_us'
+
   # get 'pages/calculator'
   # get 'calculator' => 'pages#calculator'
   # post 'pages/calculator'

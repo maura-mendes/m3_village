@@ -6,6 +6,7 @@ gem 'cloudinary'
 gem 'figaro'
 gem 'jquery-ui-rails'
 gem 'carrierwave', '~> 1.0'
+gem 'geocoder'
 
 
 gem 'bootsnap', require: false

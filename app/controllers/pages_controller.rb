@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :accommodation, :calculator]
+  skip_before_action :authenticate_user!, only: [:home, :accommodation, :calculator, :contact_us]
 
   def home
   	@rooms = Room.all
@@ -11,6 +11,24 @@ class PagesController < ApplicationController
     @booking = Booking.new
   end
 
+  def contact_us
+
+    # @markers = {lat: 38.720122, lng: -9.1666243,17}
+    # function initMap() {
+    #   var myLatLng = {lat: -25.363, lng: 131.044};
+
+    #   var map = new google.maps.Map(document.getElementById('map'), {
+    #     zoom: 4,
+    #     center: myLatLng
+    #   });
+
+    #   var marker = new google.maps.Marker({
+    #     position: myLatLng,
+    #     map: map,
+    #     title: 'Hello World!'
+    #   });
+    # }
+  end
   def calculator
   	
 	  	@name1 = params[:name]
@@ -40,4 +58,5 @@ class PagesController < ApplicationController
 
 
   end
+
 end
