@@ -1,0 +1,143 @@
+<div class="upper-page-banner">
+</div>
+<div class="container">
+	<div class="search-form-border">
+		<%= render 'shared/search-form' %>
+	</div>
+</div>
+<div class="container carousel-page">
+	<h1><%= @room.name %></h1>
+	<div class="carrousell-container">
+		<div class="carrousell">
+			<%= render 'shared/carousel' %>
+		</div>
+		<div class="room-description-container">
+			<div class="row">
+				<div class="col-xs-4 col-sm-2">
+					<div class="room-description-box border-right">
+						<p>room size</p>
+						<h4><%= @room.size %>m2</h4>
+					</div>	
+				</div>
+				<div class="col-xs-4 col-sm-2">
+					<div class="room-description-box border-right">
+						<p>sleeps</p>
+						<h4><%= @room.capacity %>Guests</h4>
+					</div>							
+				</div>
+				<div class="col-xs-4 col-sm-2">
+					<div class="room-description-box">
+						<p>beds</p>
+						<h4><%= @room.bed %>Bed</h4>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="wrapper-room-details-section">
+		<div class="row">
+			<div class="col-sm-7">
+				<div class="room-description">
+					<h1><%= @room.name %></h1>
+					<div class="room-full-description">
+						<p>The hotel's spacious Deluxe rooms are located in the main building of the hotel and are 50 square metres in size. Offering views over the hotel's tropical garden, which leads to the beach and the Indian Ocean.</p>
+					</div>
+					<div class="room-features">
+						<h4>Room features:</h4>
+						<ul>
+							<li>Separate seating area</li>
+							<li>Private balcony</li>
+							<li>Writing desk</li>
+							<li>King-sized double bed or twin beds</li>
+							<li>Bathroom with separate bathtub, shower and hairdryer</li>
+							<li>42-inch plasma television with Satellite international channels</li>
+							<li>Air condition</li>
+							<li>Ceiling Fan</li>
+							<li>Tea & Coffee making facilities</li>
+							<li>An iron and ironing board</li>
+							<li>In-room safe.</li>
+							<li>Views over the Indian Ocean</li>
+							<li>Phone</li>
+							<li>Minibar</li>
+						</ul>
+
+						<h4>Additional Facilities & Services:  </h4>
+						<ul>
+							<li>In Room Dining</li>
+							<li>Baby Cot provided free of charge for children below the age of 4</li>
+							<li>Babysitting services</li>
+						</ul>
+
+					</div>
+				</div>
+				
+			</div>
+			<div class="col-sm-5">
+				<div class="booking-form">
+					<div class="form">
+						<div class="row">
+							<div class="col-sm-12">
+								<p><span class="price">$<%= number_with_precision(@room.price, :precision => 2, ) %></span> per night</p>
+								<hr>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<h4>Dates</h4>
+								<div class="input-container">
+									 <p><%= @check_in_date.strftime("%d/ %m /%y") %> &nbsp <i class="fas fa-arrow-right"></i> &nbsp <%= @check_out_date.strftime("%d/ %m /%y") %></p>
+								</div>
+								
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<h4>Guests</h4>
+								<div class="input-container input-margin">
+									 <p> <%= pluralize(@total_guests, 'guest') %></p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="price-calculation-box">
+									<p>$ <%= @room.price %> x <%= pluralize(@nights, 'night') %></p>
+									<p>$ <%= @room.price * @nights %></p>
+								</div>
+								<hr>
+								<div class="price-calculation-box">
+									<p><span class="total">Total</span></p>
+									<p class="total">$ <%= @room.price * @nights %></p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<%= link_to "BOOK NOW", "#",  class: "btn btn-search-card btn-width" %>
+							</div>
+						</div>
+
+						
+
+					</div>
+				</div>
+				
+			</div>		
+		</div>
+	</div>
+	<div class="wrapper-more-room">
+		<h1>More Rooms</h1>
+		<div class="row">
+			<% @more_rooms.each do |r| %>
+			<div class="col-sm-6 col-md-4">
+				<%= render  "rooms/room", room: r %>
+			</div>
+			<% end %>
+		</div>
+	</div>
+</div>

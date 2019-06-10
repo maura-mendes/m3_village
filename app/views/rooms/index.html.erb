@@ -29,10 +29,12 @@
 							</div>
 						</div>
 						<div class="price-section">
-							<h4>$145,00</h4>
-							<p>1 night: $145,00</p>
-							<%= link_to "BOOK NOW", "#", class: "btn-search-card" %>
+							<h4>$<%= number_with_precision(r.price, :precision => 2, ) %></h4>
+							<p><%= pluralize(@nights, 'night') %>:  $<%= r.price * @nights %></p>
+							<%= link_to "VIEW", "#", class: "btn-search-card" %>
 						</div>
+							<%= link_to r, class: "card-link" do %>
+						  	<% end %>
 					</div>
 					
 					<hr>
@@ -67,7 +69,8 @@
 						<%= render  "rooms/mobile-card", room: r %>
 						<hr>
 					</div>
-					
+					<%= link_to r, class: "card-link" do %>
+				  	<% end %>
 				<% end %>	
 			</div>
 			<div class="row">

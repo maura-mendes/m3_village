@@ -1,0 +1,347 @@
+.carousel-page{
+	h1{
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 26px;
+		line-height: 28px;
+		color: rgba(24, 24, 24, 0.8);
+		text-align: center;
+		padding-bottom: 10px;
+		text-transform: uppercase;
+		margin-top: 0;
+	}
+}
+
+.carrousell-container{
+	margin-bottom: 40px;
+	box-shadow: 0px 4px 4px #aaaaaa;
+	.carousell{
+
+	}
+	.room-description-container{
+		background: #DDDDDD;
+		// box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+		height: 100px;
+		padding-top: 23px;
+		.border-right{
+			border-right: 1px solid #B3B3B3; 
+		}
+		.room-description-box{
+			text-align: center;
+			p{
+				margin: 0;
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 16px;
+				line-height: 21px;
+				color: rgba(68, 67, 66, 0.9);
+				margin-bottom: 5px;
+			}
+			h4{
+				margin: 0;	
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 21px;
+				line-height: 28px;
+				color: #444342;
+			}
+		}
+	}
+
+}
+
+.wrapper-room-details-section{
+	.room-description{
+		h1{
+			margin: 0;
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 24px;
+			line-height: 28px;
+			color: rgba(24, 24, 24, 0.8);
+			text-transform: uppercase;
+			margin-bottom: 30px;
+			margin-top: 50px;
+		}
+		.room-full-description{
+			p{
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 18px;
+				line-height: 21px;
+				text-align: justify;
+				color: rgba(24, 24, 24, 0.65);
+			}
+		}
+		.room-features{
+			padding-bottom: 50px;
+			h4{
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 18px;
+				line-height: 21px;
+				text-align: justify;
+				color: rgba(24, 24, 24, 0.8);
+				margin-top: 45px;
+
+			}
+			ul {
+				padding-left: 0;
+				li{
+					list-style: none;
+					font-family: Roboto;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 18px;
+					line-height: 21px;
+					text-align: justify;
+					color: rgba(24, 24, 24, 0.65);
+					margin-top: 20px;
+				}
+			}
+				
+		}
+	}
+	.booking-form{
+		position: relative;
+		top: -239px;
+		padding: 38px;
+		hr{
+			border: 0.5px solid rgba(24, 24, 24, 0.5);
+			margin-top: 17px;
+		}
+		p{
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 20px;
+			line-height: 28px;
+			/* identical to box height */
+
+			color: #181818;
+
+		}
+		.price{
+			font-size: 24px;
+			font-weight: 600;
+		}
+		.form{
+			padding: 39px;
+			background: #F9F9F9;
+			border: 1px solid #BEBDBD;
+			box-sizing: border-box;
+			
+			.col-sm-6{
+				padding-left: 0;
+				padding-right: 12px;
+			}
+			.input-container{
+				border: 1px solid #959090;
+				box-sizing: border-box;
+			
+				padding: 13px;
+				p{
+					margin: 0;
+					font-family: Roboto;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 20px;
+					line-height: 18px;
+					/* identical to box height */
+
+					color: rgba(0, 0, 0, 0.5);
+				}
+				
+			}
+			.input-margin{
+				margin-top: 10px;
+			}
+			.price-calculation-box{
+				display: flex;
+				justify-content: space-between;
+				margin-top: 30px;
+				p{
+					font-family: Roboto;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 20px;
+					line-height: 18px;
+					/* identical to box height */
+
+					color: rgba(0, 0, 0, 0.5);
+				}
+				.total{
+					color: rgba(0, 0, 0, 0.8);
+					padding-bottom: 18px;
+				}
+			}
+			.btn-width{
+				width: 100%;
+			}
+		}
+	}
+}
+.wrapper-more-room{
+	background: #F4F4F4;
+	padding-bottom: 150px;
+	h1{
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		line-height: 42px;
+		color: #444342;
+		margin-bottom: 28px;
+
+	}
+}
+
+//media queries
+@media only screen 
+  and (max-width: 320px){
+  	.carousel-page{
+  		h1{
+  			font-size: 24px;
+  		}
+  	}
+  	  	.carrousell-container{
+  	  		.carousel-inner{
+  	  			img{
+  					height: 200px !important;
+  				    width: 100%;
+  	  			}
+  	  			.item{
+  	  				height: 200px;
+  	  			}
+  	  		}
+  	  		.room-description-container{
+  	  			height: 89px;
+  	  			padding-top: 18px;
+  	  			.room-description-box{
+  	  				h4{
+  	  					font-size: 19px;
+  	  				}
+  	  				p{
+  	  					font-size: 15px;
+  	  				}
+  	  			}
+  	  		}
+  	  	}
+  	  	.wrapper-room-details-section {
+  	  		h4{
+  	  			font-size: 20px;
+  	  		}
+  	  		.booking-form {
+  	  			position: static;
+  	  		    padding: 0;
+  	  		    /* padding: 38px; */
+  	  		    .price{
+  	  		    	font-size: 21px;
+  	  		    }
+  	  		    .form{
+  	  		    	padding: 17px;
+  	  		    	.input-container{
+  	  		    		p{
+  	  		    			font-size: 16px;
+  	  		    		}
+  	  		    	}
+  	  		    }
+  	  		    hr{
+  	  		    	margin-bottom: 10px;
+  	  		    }
+  	  		}
+  	  		.room-description{
+  	  			h1{
+  	  				margin-bottom: 11px;
+  	  				margin-top: 1px;
+  	  			}
+  	  			.room-features{
+  	  				padding-bottom: 28px;
+  	  				h4{
+  	  					margin-top: 29px;
+  	  				}
+  	  				ul{
+  	  					li{
+  	  						margin-top: 10px;
+  	  						font-size: 16px;
+  	  					}
+  	  				}
+  	  			}
+  	  			.room-full-description {
+					p{
+						font-size: 16px;
+					}
+  	  				
+  	  			}
+  	  		}
+  	  	}
+  }
+
+
+@media only screen 
+  and (min-width: 768px)
+  and (max-width: 990px){
+  	.carrousell-container{
+  		// .carousel-inner{
+  		// 	img{
+				// height: 200px !important;
+			 //    width: 100%;
+  		// 	}
+  		// 	.item{
+  		// 		height: 200px;
+  		// 	}
+  		// }
+  		.room-description-container{
+  			.room-description-box{
+  				h4{
+  					font-size: 19px;
+  				}
+  				p{
+  					font-size: 15px;
+  				}
+  			}
+  		}
+  	}
+  	.wrapper-room-details-section {
+  		h4{
+  			font-size: 20px;
+  		}
+  		.booking-form {
+  		    top: -176px;
+  		    padding: 0;
+  		    padding-right: 10px;
+  		    /* padding: 38px; */
+  		    .price{
+  		    	font-size: 21px;
+  		    }
+  		    .form{
+  		    	padding: 17px;
+  		    	.input-container{
+  		    		p{
+  		    			font-size: 16px;
+  		    		}
+  		    	}
+  		    }
+  		    hr{
+  		    	margin-bottom: 10px;
+  		    }
+  		}
+  		.room-description{
+  			.room-features{
+  				ul{
+  					li{
+  						margin-top: 10px;
+  					}
+  				}
+  			}
+  		}
+  	}
+  	
+  }
+

@@ -9,7 +9,7 @@
 			<%= f.input :check_out_date, as: :string, required: false, label: false, input_html: {class: "datepicker input-icon-calendar", value: @check_out_date}, placeholder: "Check out" %>
 		</div>
 		<div class="col-md-2">
-			<%= f.input :adult_guest, label: false,input_html: { class: 'input-icon-arrow'}, collection: Booking::ADULT_GUESTS, selected: @adult_guest  %>
+			<%= f.input :adult_guest, label: false,input_html: { class: 'input-icon-arrow'}, collection: Booking::ADULT_GUESTS, selected: @adult_guest, prompt: @adult_guest  %>
 		</div>
 		<div class="col-md-2">
 			<%= f.input :children_guest, label: false,input_html: { class: 'input-icon-arrow'}, collection: Booking::CHILDREN_GUESTS, selected: @children_guest   %>

@@ -5,7 +5,7 @@ ruby '2.4.4'
 gem 'cloudinary'
 gem 'figaro'
 gem 'jquery-ui-rails'
-
+gem 'carrierwave', '~> 1.0'
 
 
 gem 'bootsnap', require: false

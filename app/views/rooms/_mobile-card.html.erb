@@ -9,11 +9,15 @@
 		 <span class="mob-room-size"><%= room.size %>&nbsp;M2</span>			
 	</div>
 	<div class="mob-price-section">
-		<h4><span class="price-per-night">$145,00</span></h4>
+		<h4><span class="price-per-night">
+			$<%= number_with_precision(room.price, :precision => 2, ) %>
+			
+			</span>
+		</h4>
 		<p><span class="total-price">
-			1 night: $145,00
+			<%= pluralize(@nights, 'night') %>:  $<%= room.price * @nights %>
 		</span></p>
 	</div>
-	<%= link_to "BOOK NOW", "#", class: "btn-search-card" %>
+	<%= link_to "VIEW DETAILS", "#", class: "btn-search-card" %>
 </div>
 
