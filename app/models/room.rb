@@ -5,6 +5,11 @@ class Room < ApplicationRecord
 	accepts_nested_attributes_for :room_attachments
 	# has_many :photos, through: :room_attachmens
 
+	COORDINATES = [{
+	     lat:  -25.056682,
+	     lng: 33.664984
+  	}]
+
 	def self.search(search)
 	  where(available: true) 
 	end

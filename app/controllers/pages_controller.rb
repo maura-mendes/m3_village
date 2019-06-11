@@ -13,6 +13,12 @@ class PagesController < ApplicationController
 
   def contact_us
 
+   # @coordinates = Room::COORDINATES
+   @markers = Room::COORDINATES
+     
+  
+  
+
     # @markers = {lat: 38.720122, lng: -9.1666243,17}
     # function initMap() {
     #   var myLatLng = {lat: -25.363, lng: 131.044};
