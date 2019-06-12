@@ -1,6 +1,6 @@
 
 .lg-upper-page-banner{
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.4) ), image-url('hotel-pillows.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65) ), image-url('hotel-pillows.jpg');
  	background-size: cover;
  	height: 50vh;
  	background-position: center;
@@ -33,5 +33,72 @@
  	}
 }
 .wrapper-contact-us{
-	
+	.contact-details-container{
+		position: relative;
+    	top: -100px;
+		.col-sm-8{
+			// padding-left: 0;
+			padding-right: 0;
+		}
+		.col-sm-4{
+			padding-left: 0;
+			// padding-right: 0;
+		}
+		#map{
+		    filter: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="g"><feColorMatrix type="matrix" values="0.3 0.3 0.3 0 0 0.3 0.3 0.3 0 0 0.3 0.3 0.3 0 0 0 0 0 1 0"/></filter></svg>#g');
+		    -webkit-filter: grayscale(100%);
+		    filter: grayscale(100%);    
+		    filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1);
+		}
+		.contact-details{
+			height: 380px;
+			background: #2D2B29;
+			font-family: Open Sans;
+			font-style: normal;
+			text-align: center;
+			padding: 46px 15px;
+
+			h4{
+				font-weight: 500;
+				font-size: 26px;
+				line-height: 35px;
+				color: #FAFAFA;
+				margin: 0;
+				margin-bottom: 14px;
+			}
+			.address{
+				font-weight: lighter;
+				font-size: 20px;
+				line-height: 27px;
+				letter-spacing: 0.03em;
+				color: #FFFFFF;
+				p{
+					margin-top: -5px;
+				}
+			}
+			.email{
+				p{
+				font-weight: 500;
+				font-size: 22px;
+				line-height: 30px;
+				letter-spacing: 0.03em;
+				color: #E9984D;
+				margin-top: 37px;
+				}
+				
+			}
+			.phone_number{
+				p{
+					font-weight: 400;
+					font-size: 20px;
+					line-height: 27px;
+					letter-spacing: 0.03em;
+					color: #FFFFFF;
+					margin-top: 10px;
+				}
+				
+			}
+		}
+	}
+
 }
