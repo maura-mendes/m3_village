@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   match "calculator" => "pages#calculator", :via => [:post, :get]
 
   resources :rooms, only: [:index, :show]
+  resources :contacts, only: [:new, :create]
 
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

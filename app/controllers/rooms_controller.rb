@@ -6,7 +6,7 @@ class RoomsController < ApplicationController
   		# @rooms = Room.all
   		@booking = Booking.new
   		# pry-byebug
-  		@bookings_params  = request.query_parameters[:booking]
+  		 @bookings_params  = request.query_parameters[:booking]
    		 @check_in_date = Date.parse(@bookings_params[:check_in_date])
    		 @check_out_date = Date.parse(@bookings_params[:check_out_date])
    		 @adult_guest = @bookings_params[:adult_guest]

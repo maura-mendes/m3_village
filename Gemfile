@@ -7,6 +7,8 @@ gem 'figaro'
 gem 'jquery-ui-rails'
 gem 'carrierwave', '~> 1.0'
 gem 'geocoder'
+gem 'mail_form', '~> 1.7', '>= 1.7.1'
+
 
 
 gem 'bootsnap', require: false
