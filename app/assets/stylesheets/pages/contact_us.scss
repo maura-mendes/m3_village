@@ -33,6 +33,7 @@
  	}
 }
 .wrapper-contact-us{
+	background-color: white;
 	.contact-details-container{
 		position: relative;
     	top: -100px;
@@ -97,6 +98,68 @@
 					margin-top: 10px;
 				}
 				
+			}
+		}
+	}
+
+}
+.wrapper-contact-form{
+	background-color: white;
+	.contact-form{
+		background: #F9F9F9;
+		padding: 40px 30px;
+		form{
+			font-family: Roboto;
+			.invisible-label{
+				color: transparent !important;
+			}
+			.message-input{
+				height: 100px !important;
+			}
+			label{
+				font-style: normal;
+				font-weight: 500;
+				font-size: 17px;
+				line-height: 21px;
+				color: rgba(24, 24, 24, 0.65);
+			}
+			::placeholder{
+			  font-style: normal;
+			  font-weight: 300;
+			  font-size: 15px;
+			  line-height: 21px;
+			  color: rgba(118, 116, 115, 0.7);
+			}
+			.form-control{
+				border: 1px solid rgba(149, 144, 144, 0.8);
+				background: #F9F9F9;
+			}
+			.btn-form-submit{
+				background: #F6B072;
+				border: 1px solid #959090;
+				box-sizing: border-box;
+				border-radius: 4px;
+				font-weight: bold;
+				font-size: 15px;
+				line-height: 18px;
+				text-align: center;
+				color: #FFFFFF;
+				padding: 10px 66px;
+				text-decoration: none;
+				list-style: none;
+
+			}
+			.form-btn-box{
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				padding-top: 23px;
+			}
+			.form-padding-left{
+				padding-left: 6px !important;
+			}
+			.form-padding-right{
+				padding-right: 6px !important;
 			}
 		}
 	}

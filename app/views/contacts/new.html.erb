@@ -1,34 +1,91 @@
-<div class="lg-upper-page-banner">
+<!-- DESKTOP VERSION
+ -->
+<div class="lg-upper-page-banner hidden-xs">
 	<div class="banner-content">
-		<h1>hey there</h1>
-
+		<h1>Get in touch with us</h1>
+		<p>Give us a call or drop us an email, we will be happy to help you.</p>
 	</div>
 </div>
-<div class="row">
-	<div class="col-sm-6 col-sm-offset-3">
-		<%= form_for @contact do |f| %>
-			<%= f.label :name %> <br>
-			<%= f.text_field :name, required: true %>
-
-			<br>
-
-			<%= f.label :email %> <br>
-			<%= f.email_field :email, required: true %>
-
-			<br>
-
-			<%= f.label :message %> <br>
-			<%= f.text_area :message, required: true %>
-
-			<div class="hidden">
-				<%= f.label :nickname %> <br>
-				<%= f.text_field :nickname, hint: 'leave this field blank' %>
+<div class="wrapper-contact-us hidden-xs">
+	<div class="container">
+		<div class="contact-details-container">
+			<div class="row">
+				<div class="col-sm-8">
+					<div
+					  id="map"
+					  style="width: 100%;
+					  height: 380px;"
+					  data-markers="<%= @markers.to_json %>"
+					></div>
+					
+				</div>
+				<div class="col-sm-4">
+					<div class="contact-details">
+						<h4>Visit us</h4>
+						<span class="address">
+							<p>Rua do Miau-Miau</p>
+							<p> Xai-Xai - Mozambique</p>
+						</span>
+						
+						<span class="email"><p>hello@m3village.com</p></span>
+						<span class="phone_number"><p>+258 82 81 77 844</p> </span>
+					</div>
+					
+				</div>
 			</div>
-
-			<br>
-
-			<%= f.submit 'Send Message', class: " btn button" %>
-		<% end %>
+		</div>
 	</div>
-
 </div>
+<div class="wrapper-contact-form hidden-xs">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-7">
+				<div class="contact-form">
+					<%= simple_form_for @contact do |f| %>
+						<div class="row">
+							<div class="col-sm-6 form-padding-right">	
+								<%= f.input :first_name, as: :string, required: true, label: 'Name',  placeholder: "First name", input_html: { class: 'input-padding-right' } %>
+							</div>
+							<div class="col-sm-6 form-padding-left">
+								<%= f.input :last_name, as: :string, required: false, label_html: { class: 'invisible-label' } , placeholder: "First name", input_html: { class: 'input-padding-left' } %>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<%= f.input :email, as: :email,  label: 'Email address', required: true, placeholder: ' ruth.martin@gmail.com' %>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<%= f.input :subject, as: :string, label: 'Subject',  placeholder: "Ex: birthday celebration services" %>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<%= f.input :message, as: :text, input_html: { class: 'message-input' }, required: true, label: 'Message',  placeholder: "Type your message " %>
+							</div>
+						</div>
+						<div class="row hidden">
+							<div class="col-sm-12">
+								<%= f.input :nickname, hint: 'leave this field blank' %>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="form-btn-box">
+									<%= f.submit "SUBMIT", class: "btn btn-form-submit"  %>
+								</div>
+							</div>
+						</div>
+					<% end %>
+				</div>
+				
+			</div>
+			<div class="col-sm-5">
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+
