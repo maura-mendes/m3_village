@@ -32,6 +32,9 @@
  		}
  	}
 }
+.thank-you-page-banner{
+	height: 30vh !important;
+}
 .wrapper-contact-us{
 	background-color: white;
 	.contact-details-container{
@@ -105,6 +108,8 @@
 }
 .wrapper-contact-form{
 	background-color: white;
+	padding-top: 18px;
+	padding-bottom: 100px;
 	.contact-form{
 		background: #F9F9F9;
 		padding: 40px 30px;
@@ -125,10 +130,10 @@
 			}
 			::placeholder{
 			  font-style: normal;
-			  font-weight: 300;
+			  font-weight: 500;
 			  font-size: 15px;
 			  line-height: 21px;
-			  color: rgba(118, 116, 115, 0.7);
+			  color: rgba(118, 116, 115, 0.6);
 			}
 			.form-control{
 				border: 1px solid rgba(149, 144, 144, 0.8);
@@ -163,5 +168,71 @@
 			}
 		}
 	}
+	.form-side-text{
+		h3{
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 28px;
+			line-height: 37px;
+			text-align: center;
+			color: rgba(24, 24, 24, 0.8);
+		}
+		p{
+			font-family: Open Sans;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 20px;
+			line-height: 33px;
+			color: rgba(0, 0, 0, 0.65);
+			margin-top: 42px;
+		}
+	}
 
+}
+
+//THANK YOU MESSAGE PAGE
+
+.thank-you-page-banner{
+	height: 30vh !important;
+}
+.wrapper-thank-you-message{
+	background: #F9F9F9;
+	padding: 73px 0;
+	.message-container{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		.message-description{
+			text-align: center;
+			background-color: white;
+			box-shadow: 0 4px 2px -2px gray;
+			box-shadow: 0 5px 13px -1px grey;
+   			// box-shadow: 5px 10px 8px #888888;
+   			padding: 28px 35px;
+			.icon{
+				padding-top: 50px;
+				i{
+					color: #44c400;
+					font-size: 100px;
+
+				}
+			}
+			h1{
+				font-family: Roboto;
+				color: rgba(24, 24, 24, 0.8);
+				font-weight: 500;
+				font-size: 46px;
+			}
+			p{
+				font-family: Open Sans;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 18px;
+				line-height: 23px;
+				color: rgba(0, 0, 0, 0.65);
+
+			}
+		}
+	}
 }
