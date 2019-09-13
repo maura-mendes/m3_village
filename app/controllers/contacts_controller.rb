@@ -6,6 +6,7 @@ class ContactsController < ApplicationController
 
 	def new
 		@contact = Contact.new
+		 @markers = Room::COORDINATES
 	end
 
 	def create

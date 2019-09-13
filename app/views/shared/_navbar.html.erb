@@ -59,7 +59,7 @@
           <li><%= link_to "About us", "#", class: "navbar-item-left avbar-wagon-item navbar-wagon-link"  %></li>
           <li><%= link_to "Rooms", "#", class: "avbar-wagon-item navbar-wagon-link"  %></li>
           <li><%= link_to "Gallery", "#", class: "avbar-wagon-item navbar-wagon-link" %></li>
-          <li><%= link_to "Contacts",  new_contact_path ,class: "navbar-item-right avbar-wagon-item navbar-wagon-link"  %></li>
+          <li><%= link_to "Contact",  new_contact_path ,class: "navbar-item-right avbar-wagon-item navbar-wagon-link"  %></li>
         <% if user_signed_in? %>
       <li><%= link_to destroy_user_session_path, method: :delete do %>
                 <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out") %>
@@ -89,7 +89,7 @@
             <% end %>
       
           <%= link_to "Gallery", "#", class: "avbar-wagon-item navbar-wagon-link" %>
-          <%= link_to "Contacts",  new_contact_path ,class: "navbar-item-right avbar-wagon-item navbar-wagon-link"  %>         
+          <%= link_to "Contact",  new_contact_path ,class: "navbar-item-right avbar-wagon-item navbar-wagon-link"  %>         
       </div>    
     </div>    
   </div>  
