@@ -10,7 +10,7 @@ class Contact < MailForm::Base
 		{
 			:subject => "Contact Form",
 			:to => "maura.mendes.baptista@gmail.com",
-			:from => %("#{first_name} #{last_name}" <#{email}>)
+			:from => %("#{first_name.capitalize} #{last_name.capitalize}" <#{email}>)
 		}
 	end
 end
