@@ -6,17 +6,11 @@ class Contact < MailForm::Base
 	attribute :message, :validate => true
 	attribute :nickname, :captcha => true
 
-	def name
-		"#{first_name.capitalize} #{last_name.capitalize}"
-	end
-
-
-
 	def headers 
 		{
 			:subject => "Contact Form",
 			:to => "maura.mendes.baptista@gmail.com",
-			:from => %("#{name}" <#{email}>)
+			:from => %("#{first_name} #{last_name}" <#{email}>)
 		}
 	end
 end
