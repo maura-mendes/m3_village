@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :accommodation, :calculator, :contact_us]
+  skip_before_action :authenticate_user!, only: [:home, :accommodation, :calculator, :contact_us, :gallery]
 
   def home
   	@rooms = Room.all
@@ -34,6 +34,9 @@ class PagesController < ApplicationController
     #     title: 'Hello World!'
     #   });
     # }
+  end
+
+  def gallery
   end
   def calculator
   	

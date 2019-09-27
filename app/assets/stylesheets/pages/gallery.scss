@@ -1,0 +1,72 @@
+.gallery-banner-picture{
+	background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5) ), image-url('beach8.png');
+	height: 27vh;
+}
+.picture-gallery{
+	background-color: white;
+	.gallery-title{
+		h1{
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 28px;
+			line-height: 28px;
+			color: rgba(24, 24, 24, 0.8);
+			text-align: center;
+			margin-bottom: 8px;
+			margin-top: 69px;
+		
+		}
+		p{
+			font-family: Open Sans;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 25px;
+			text-align: center;
+			color: rgba(24, 24, 24, 0.65);
+		}
+	}
+	.tabs{
+		background: white;
+		padding: 30px 100px 0 100px;
+		webkit-box-shadow: 0 15px 25px -24px rgba(0,0,0,.25);
+		box-shadow: 0 15px 25px -24px rgba(0,0,0,.25);
+		text-align: center;
+		display: flex;
+
+		text-align: center;
+		overflow-x: visible;
+		margin-top: 0;
+		position: -webkit-sticky;
+		position: sticky;
+		top: 125px;
+		z-index: 9;
+		margin-bottom: 60px;
+	}
+
+	.nav-pills > li.active > a{
+		background-color: white;
+		border-bottom: 1.5px solid #a08e68;
+		color: #a08e68;
+	}
+
+	ul {
+		li a{
+			    font-family: Open Sans;
+			    font-weight: 500;
+				color: rgba(24, 24, 24, 0.8);
+				 font-size: 14px;
+				 letter-spacing: 1px;
+				 cursor: pointer;
+				box-sizing: border-box;
+				border-bottom: 2px solid #fff;
+				transition: all .2s;
+				padding:  25px 0px;
+			}
+	}
+	.tabs-item{
+		flex: 1 0 auto;
+		text-align: center;
+	}
+}
