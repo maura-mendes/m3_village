@@ -18,6 +18,6 @@
 			<%= pluralize(@nights, 'night') %>:  $<%= room.price * @nights %>
 		</span></p>
 	</div>
-	<%= link_to "VIEW DETAILS", "#", class: "btn-search-card" %>
+	<%= link_to "VIEW DETAILS", room, class: "btn-search-card" %>
 </div>
 
