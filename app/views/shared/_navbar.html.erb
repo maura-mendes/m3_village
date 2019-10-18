@@ -56,7 +56,7 @@
       <div class="dropdown">
         <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-          <li><%= link_to "About us", "#", class: "navbar-item-left avbar-wagon-item navbar-wagon-link"  %></li>
+          <li><%= link_to "About us", root_path( :anchor => "section-about-us"), class: "navbar-item-left avbar-wagon-item navbar-wagon-link"  %></li>
           <li><%= link_to "Rooms", rooms_list_path, class: "avbar-wagon-item navbar-wagon-link"  %></li>
           <li><%= link_to "Gallery",  gallery_path, class: "avbar-wagon-item navbar-wagon-link" %></li>
           <li><%= link_to "Contact",  new_contact_path ,class: "navbar-item-right avbar-wagon-item navbar-wagon-link"  %></li>
@@ -81,7 +81,7 @@
     <div class="container">
       <div class="navbar-links hidden-xs hidden-sm">
         
-          <%= link_to "About us", "#", class: "navbar-item-left avbar-wagon-item navbar-wagon-link"  %>
+          <%= link_to "About us", root_path( :anchor => "section-about-us"), class: "navbar-item-left avbar-wagon-item navbar-wagon-link"  %>
           <%= link_to "Rooms", rooms_list_path, class: "avbar-wagon-item navbar-wagon-link"  %>
           
            <%= link_to root_path, class: "logo" do %>

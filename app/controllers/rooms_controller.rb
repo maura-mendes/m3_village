@@ -7,13 +7,38 @@ class RoomsController < ApplicationController
   		@booking = Booking.new
   		# pry-byebug
   		 @bookings_params  = request.query_parameters[:booking]
-   		 @check_in_date = Date.parse(@bookings_params[:check_in_date])
-   		 @check_out_date = Date.parse(@bookings_params[:check_out_date])
-   		 @adult_guest = @bookings_params[:adult_guest]
-   		 @children_guest = @bookings_params[:children_guest]
+       @check_in_date = @bookings_params[:check_in_date]
+       @check_out_date = @bookings_params[:check_out_date]
+       @adult_guest = @bookings_params[:adult_guest]
+       @children_guest = @bookings_params[:children_guest]
+
+       if @check_in_date.present? 
+         @check_in_date = Date.parse(@bookings_params[:check_in_date]) 
+          # @check_out_date = Date.parse(@bookings_params[:check_out_date]) 
+       else
+         # @check_in_date = Date.today.strftime("%Y.%m.%d")
+         @check_in_date = Date.today
+         # @check_out_date = @check_in_date + 1
+       end
+
+        if @check_out_date.present?
+          @check_out_date = Date.parse(@bookings_params[:check_out_date]) 
+        else
+          @check_out_date = @check_in_date + 1 
+        end
+
+   		  if @dult_guest.present? || @children_guest.present?
+           @adult_guest = @bookings_params[:adult_guest]
+           @children_guest = @bookings_params[:children_guest]
+        else
+          @adult_guest = 1
+          @children_guest = 0
+        end
+
        @nights = (@check_out_date - @check_in_date).to_i  
        session[:passed_variable] = @bookings_params
 
+        
 
    		if params[:commit]
    		    @rooms = Room.search(params[:search]).order("created_at DESC")

@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :accommodation, :calculator, :contact_us, :gallery, :rooms_list]
+  skip_before_action :authenticate_user!, only: [:home, :accommodation, :calculator, :contact_us, :gallery, :rooms_list, :restaurant]
 
   def home
   	@rooms = Room.all
@@ -38,6 +38,10 @@ class PagesController < ApplicationController
 
   def gallery
   end
+
+  def restaurant
+  end
+
 
   def rooms_list
     @rooms = Room.all
