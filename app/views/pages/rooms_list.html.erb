@@ -15,31 +15,31 @@
 				<h2 class="hidden-xs">Choose Your Room</h2>
 				<div class="border hidden-xs"></div>
 			</div>
-			<div class="col-sm-9">
+			<div class="col-sm-8 col-md-9">
 				<div class="rooms-list">	
 					<% @rooms.each do |r| %>
 						<div class="card-rooms-container">
 							<div class="row">
-								<div class="col-xs-12 col-sm-5">
+								<div class="col-xs-12 col-sm-6 col-md-5">
 									<div class="card-img" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= asset_path r.room_attachments.first.photo%>);">
 										<%#= link_to r, class: "card-link" do %>
 										<%# end %>
 									</div>
 								</div>
-								<div class="col-xs-12 col-sm-7">
+								<div class="col-xs-12 col-sm-6 col-md-7">
 									<div class="room-card-details">
 										<div class="room-card-description">
 											<h2><%= r.name %></h2>
-											<p class="hidden-xs"><span class="room-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum... </span></p>
+											<p class="hidden-xs hidden-sm"><span class="room-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum... </span></p>
 											<ul >
 												<li><i class="fas fa-bed" >&nbsp;&nbsp;&nbsp;Bed:</i><span><%= r.bed %> Bed</span></li>
-												<li class="list-align-left"><i class="fa fa-arrows-alt"> &nbsp;&nbsp;&nbsp;Size:</i><span><%= r.size %>m2</span></li>
+												<li class="list-align-right"><i class="fa fa-arrows-alt"> &nbsp;&nbsp;&nbsp;Size:</i><span><%= r.size %>m2</span></li>
 												<li><i class="fa fa-coffee">&nbsp;&nbsp;&nbsp;Breakfast:</i> <span>Yes</span></li>
-												<li class="list-align-left"><i class="fa fa-users">&nbsp;&nbsp;&nbsp;Sleeps:</i><span><%= r.capacity %></span></li>
+												<li class="list-align-right"><i class="fa fa-users">&nbsp;&nbsp;&nbsp;Sleeps:</i><span><%= r.capacity %></span></li>
 											</ul>
 											<hr>
 											<div class="price-container">
-												<p>Starting from: <span class="price"> <br class="hidden-sm hidden-md hidden-lg">$<%= r.price %></span><span class="price-mesurment">/night</span></p>
+												<p>Starting from: <span class="price"> <br class="hidden-md hidden-lg">$<%= r.price %></span><span class="price-mesurment">/night</span></p>
 												<div class="view-more-link">
 													<p>
 													<%= link_to  r, class: "btn-book-rooms-list" do %>
@@ -56,7 +56,7 @@
 					<% end %>
 				</div>
 			</div>
-			<div class="col-sm-3">
+			<div class="col-sm-4 col-md-3">
 				 <div class="contact-support-section">
 					<div class="contact-support-box">
 						<h3>Contact Support</h3>
