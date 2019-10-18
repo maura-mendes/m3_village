@@ -1,0 +1,30 @@
+  <div class="cards-container card-wrapper padded-top ">
+    <div class="card-image filter" style="background-image: url(<%=  room.room_attachments.first.photo %>);">
+        <div class="wishlist-rounded-white text-center">
+
+            <!-- Inline SVG -->
+            
+        </div>
+    </div>
+
+    <!-- Card Bottom Row -->
+      <div class="card-details">
+        <div class="card-row">
+          <span class="room-name"><%= room.name %> </span>
+          <span class="room-size"><%= room.size %> m2</span>
+        </div>
+        <div class="card-row card-margin-adjustment">
+          <span class="room-beds"><%= image_tag "bed.png", id: "icon-bed" %><%= room.bed %> bed </span>&nbsp;
+          <span class="room-capacity"><%= image_tag "people.png", id: "icon-people" %>sleeps <%= room.capacity %> </span>
+        </div>
+      </div>
+
+    <!-- Card Rating and Review -->
+   
+    
+    <!-- Card Link -->
+   
+    <%= link_to room, class: "card-link" do %>
+    <% end %>
+
+</div>

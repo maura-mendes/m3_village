@@ -1,0 +1,483 @@
+.rooms-list-banner{
+    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65) ), image-url('hotel-pillows.jpg');
+	background-size: cover;
+	height: 40vh;
+	background-position: center;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	.banner-content{
+		h1 {
+			font-family: Roboto;
+		    font-style: normal;
+		    font-weight: bold;
+		    font-size: 28px;
+		    font-size: 32px;
+		    line-height: 44px;
+		    text-align: center;
+		    color: rgba(255, 255, 255, 0.9);
+		    margin-top: 89px;
+		}
+	}	
+}
+
+.listing-rooms-wrapper{
+	background-color: #f4f4f4;
+	padding-top: 63px;
+	h3{
+		font-family: "Cinzel Decorative";
+		font-size: 14px;
+		font-weight: bold;
+		line-height: 2.14;
+		letter-spacing: 2.8px;
+		text-align: center;
+		color: #b0914f;
+		margin-bottom: 5px;
+	}
+	h2{
+		font-family: "Playfair Display", serif;
+		font-size: 48px;
+		font-weight: bold;
+		text-align: center;
+		color: #333333;
+		margin: 0;
+		margin-bottom: 35px;
+		
+	}
+	.border {
+	    border: 1.5px solid #b0914f;
+	    width: 62px;
+	    position: absolute;
+	    left: 50%;
+	}
+	.rooms-list{
+		margin-top: 88px;
+	}
+
+	.contact-support-section{
+		margin-top: 50px;
+		
+		.contact-support-box{
+			background-color: white;
+			padding: 26px 27px;
+			padding-left: 10px;
+			margin-top: 88px;
+			h3{
+				font-family: Roboto;				
+				color:  rgba(24, 24, 24, 0.65);
+				font-size: 22px;
+				font-weight: bold;
+				line-height: 1.07;
+				text-align: left;
+				margin: 0;
+				margin-bottom: 18px;
+				margin-top: 10px;	
+			}
+			p{
+				color:  rgba(24, 24, 24, 0.5) ;
+				font-size: 14px;
+				
+				line-height: 1.4em;
+				.tel{
+					color: #E9984D;
+					font-weight: bold;
+
+				}
+				.email{
+					color:  rgba(24, 24, 24, 0.65);
+					font-size: 14px;
+				}
+				i{
+					font-size: 14px;
+					margin-right: 10px;
+					text-align: center;
+
+				}
+			}
+			.text-centered{
+				text-align: center;
+			}
+		}
+		.special-offers-section{
+			padding-top: 46px;
+			.special-offers-box{
+				padding: 28px 23px 55px;
+				text-align: center;
+				background-size: cover;
+				background-position: top;
+				.offer-title{
+					background-color: black;
+					padding: 61px 0px;
+					background: black;
+					border-radius: 100%;
+					color: white;
+					h3{
+						color: white;
+						font-size: 16px;
+						font-family: Roboto;
+						text-transform: uppercase;
+						margin: 0;
+
+					
+
+					}
+					h2{
+						color: white;
+						font-size: 23px;
+						font-weight: bold;
+						margin-top: 4px;
+						margin-bottom: 10px;
+						text-transform: uppercase;
+					}
+					p{
+						color: white;
+						font-size: 16px;
+						font-family: Roboto;
+						text-transform: uppercase;;
+						margin: 0;
+						
+					}
+
+				}
+				p{
+					font-family: Open Sans;
+					color: black;
+					font-weight: 400;
+					font-size: 15px;
+					margin-bottom: 25px;
+					line-height: 1.4em;
+					margin-top: 25px;
+				}
+				.btn-book-section{
+					padding-top: 10px;
+					.btn-rooms-list-book{
+							width: 200px;
+						    height: 50px;
+						    border: 1px solid black;
+						    background-color: transparent;					   
+						    border-radius: 4px;
+						    color: black;
+						    text-align: center;
+						    font-family: Open Sans;
+						    font-weight: bold;
+						    font-size: 18px;
+						    line-height: 25px;
+						    text-decoration: none;
+						    list-style: none;
+						    padding: 9px 33px;
+						    &:hover{
+						        
+						        background: white;
+						        border: none;
+						       
+						    }
+						    &:active{
+						        text-decoration: none;
+						    }
+					}	
+				}	
+			}
+		}
+	}
+	.card-rooms-container{
+		margin-top: 50px;
+		// box-shadow: 2px 5px 5px #888888;
+
+		&:hover, &:active, &:focus {
+		  outline: none;
+		}
+		transition: transform 0.3s !important;
+		&:hover{
+		  transform: translateY(-5px) scale(1.03) !important;
+		  box-shadow: 5px 10px 18px #888888
+		}
+		.card-img{
+			background-size: cover;
+			height: 400px;
+			background-position: center;
+		}
+		.room-card-details{
+			background-color: white;
+			height: 400px;
+			.room-card-description{
+				// padding: 19px 30px 55px;
+				padding: 40px 35px 0px 35px;
+				h2{
+					font-family: Roboto;
+					// color: rgba(24,24,24,0.8);
+					// font-size: 28px;
+					// font-weight: bold;
+					// text-transform: uppercase;
+					// margin-bottom: 6px;
+					font-size: 28px;
+					font-weight: bold;
+					line-height: 1.07;
+					text-align: left;
+					color: #333333;
+					margin: 0;
+					margin-bottom: 11px;
+				}
+				ul{
+					    margin: 0px;
+					    padding: 0px;
+					    padding-top: 1px;
+					    padding-bottom: 5px;
+					    font-family: 'Roboto', sans-serif;
+					    font-size: 14px;
+					    span{
+					    	font-weight: normal;
+					    	color: #7b7b7b;
+
+					    }
+					    i{
+					    	margin-right: 5px;
+					    }
+			
+				}
+				ul li{
+				 		list-style-type: none;
+				 		margin-top: 15px;
+
+
+				}
+				// .list-inline > li{
+				// 	display: inline-block;
+				// 	padding-right: 5px;
+				// 	padding-left: 5px;
+				// }
+				// .list-unstyled{
+				// 	padding-left: 0;
+				// 	list-style: none;
+				// }
+				p{
+					.room-description{
+						color: #6b6768;
+						font-size: 15px;
+						width: 95%;
+						margin-bottom: 25px;
+						line-height: 1.4em;
+					}
+					
+				}
+				.price-container{
+					display: flex;
+					justify-content: space-between;
+					// align-items: center;
+					p{
+						// padding: 20px 0;
+						margin: 0;
+						font-family: 'Raleway', sans-serif;
+					    font-size: 16px;
+					    font-weight: 500;
+					    line-height: 1.88;
+					    text-align: left;
+					    color: #7b7b7b;
+					    .price{
+					    	font-family: "Cinzel Decorative";
+					    	font-size: 30px;
+					    	font-weight: bold;
+					    	line-height: 1;
+					    	text-align: right;
+					    	color: #b0914f;
+					    	margin-left: 5px;
+					    }
+					    .price-mesurment{
+					    	font-family: "Cinzel Decorative";
+					    	font-size: 13px;
+					    	font-weight: bold;
+					    	line-height: 1;
+					    	text-align: right;
+					    	color: #b0914f;
+					    }
+					    .btn-book-rooms-list{
+					    	font-family: 'Raleway', sans-serif;
+					    	font-size: 13px;
+					    	font-weight: bold;
+					    	line-height: 2.31;
+					    	text-align: left;
+					    	color: #333333;
+
+					    }
+					}
+
+				}
+				.view-more-link{
+					.btn-book-rooms-list{
+						font-family: Open Sans;
+						font-weight: 600;
+						font-size: 15px;
+						line-height: 25px;
+						text-decoration: none;
+						list-style: none;
+						color: black;
+						text-transform: uppercase;
+						
+						&:hover{
+						    text-decoration: none;
+						    color: orange;
+						}
+						&:active{
+						    text-decoration: none;
+						}
+					}
+					i{
+						font-size: 15px;
+						margin-left: 3px;
+					}
+				}
+				
+			}
+		}
+		.col-sm-5{
+			padding-right: 0;
+		}
+		.col-sm-7{
+			padding-left: 0;
+		}
+	}
+
+
+}
+
+
+
+
+@media only screen 
+  and (max-width: 320px){
+	.rooms-list-banner{
+		height: 31vh;
+		.banner-content{
+			h1{
+				font-family: "Playfair Display", serif;
+				font-size: 25px;
+				font-weight: bold;
+				text-align: center;
+				color: white;
+				margin: 0;
+			}
+			h2{
+				font-family: "Cinzel Decorative";
+				font-size: 14px;
+				font-weight: bold;
+				line-height: 2.14;
+				letter-spacing: 2.8px;
+				text-align: center;
+				color: #b0914f;
+				margin: 0;
+				margin: 0;
+				margin-bottom: -14px;
+				margin-top: 52px;
+			}
+		}
+	}
+	.listing-rooms-wrapper{
+		padding-top: 0;
+		h2{
+			font-size: 28px;
+			margin-bottom: 14px;
+			border: 1.5px solid #b0914f;
+			width: 62px;
+		}
+		.rooms-list{
+			margin-top: 46px;
+		}
+		.card-rooms-container	{
+			margin-top: 35px;
+			.col-sm-5{
+				padding-right: 15px;
+			}
+			.col-sm-7{
+				padding-left: 15px;
+			}
+			.card-img{
+				height: 213px;
+			}
+			.room-card-details{
+				height: 222px;
+				.room-card-description{
+					padding: 10px 10px;
+					h2{
+						text-align: center !important;
+					    font-size: 20px;
+					    border: none;
+					    width: auto;
+					    margin-bottom: 5px;
+					    margin-top: 10px;
+					}
+					ul li{
+						display: inline;
+					}
+					ul{
+						padding-top: 4px;
+						padding-bottom: o;
+					}
+					ul i{
+						margin-top: 10px;
+					}
+					.list-align-left{
+						float: right;
+						margin-top: 0;
+					}
+					hr{
+						margin-top: 20px;
+						margin-bottom: 17px;
+					}
+					.price-container{
+						p{
+							font-size: 14px;
+							.price{
+								font-size: 20px;
+							}
+							.price-mesurment{
+								font-size: 10px;
+							}
+							.btn-book-rooms-list{
+								font-family: Open Sans;
+								font-family: Open Sans;
+							    width: 100%;
+							    padding: 5px 23px;
+							    text-align: center;
+							    float: left;
+							    border-radius: 10px;
+							    background-color: #af7603;
+							    border-radius: 10px;
+							    text-transform: uppercase;
+							    color: white;
+							    text-align: center;
+							    font-weight: 700;
+							    font-size: 14px;
+							    line-height: 25px;
+							    text-decoration: none;
+							    list-style: none;
+							        margin-top: 7px;
+							  
+							}
+						}
+					}
+				}
+			}
+		}
+		.contact-support-section{
+			margin-top: 0;
+			.contact-support-box{
+				margin-top: 35px;
+				padding: 27px 27px;
+			}
+			.special-offers-section{
+				padding-top: 35px;
+				padding-bottom: 49px;
+				.special-offers-box{
+					.offer-title{
+						    padding: 68px 0px;
+						h2{
+							border: none;
+							width: auto;
+						}
+					}
+				}
+			}
+		}
+		
+	}
+}

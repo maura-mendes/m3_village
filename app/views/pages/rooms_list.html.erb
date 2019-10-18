@@ -1,0 +1,145 @@
+<div class="rooms-list-banner">
+	<div class="banner-content">
+		<h1 class="hidden-xs">OUR ROOMS</h1>
+		<h2 class="hidden-sm hidden-md hidden-lg">Our Rooms</h1>	
+		<h1 class="hidden-sm hidden-md hidden-lg">Choose your Room</h1>
+	</div>
+</div>
+
+
+<div class="listing-rooms-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h3 class="hidden-xs">Our Rooms</h3>
+				<h2 class="hidden-xs">Choose Your Room</h2>
+				<div class="border hidden-xs"></div>
+			</div>
+			<div class="col-sm-9">
+				<div class="rooms-list">	
+					<% @rooms.each do |r| %>
+						<div class="card-rooms-container">
+							<div class="row">
+								<div class="col-xs-12 col-sm-5">
+									<div class="card-img" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= asset_path r.room_attachments.first.photo%>);">
+										<%#= link_to r, class: "card-link" do %>
+										<%# end %>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-7">
+									<div class="room-card-details">
+										<div class="room-card-description">
+											<h2><%= r.name %></h2>
+											<p class="hidden-xs"><span class="room-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum... </span></p>
+											<ul >
+												<li><i class="fas fa-bed" >&nbsp;&nbsp;&nbsp;Bed:</i><span><%= r.bed %> Bed</span></li>
+												<li class="list-align-left"><i class="fa fa-arrows-alt"> &nbsp;&nbsp;&nbsp;Size:</i><span><%= r.size %>m2</span></li>
+												<li><i class="fa fa-coffee">&nbsp;&nbsp;&nbsp;Breakfast:</i> <span>Yes</span></li>
+												<li class="list-align-left"><i class="fa fa-users">&nbsp;&nbsp;&nbsp;Sleeps:</i><span><%= r.capacity %></span></li>
+											</ul>
+											<hr>
+											<div class="price-container">
+												<p>Starting from: <span class="price"> <br class="hidden-sm hidden-md hidden-lg">$<%= r.price %></span><span class="price-mesurment">/night</span></p>
+												<div class="view-more-link">
+													<p>
+													<%= link_to  r, class: "btn-book-rooms-list" do %>
+													View More<i class="fa fa-caret-right hidden-xs" aria-hidden="true"></i>
+													<% end %>
+													</p>
+												</div>	
+											</div>	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					<% end %>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				 <div class="contact-support-section">
+					<div class="contact-support-box">
+						<h3>Contact Support</h3>
+						<p><span class="contact-support-text">If you have any questions, please don't hesitate to contact us</span></p>
+					
+						<p><span class="tel">+258 84 619 2578</span></p>
+						<p><span class="email">m3restaurant.barlounge@gmail.com</span></p>
+					</div>
+					<div class="special-offers-section">
+						<div class="special-offers-box" style="background-image: linear-gradient(rgba(246, 176, 114, 0.8), rgba(231, 139, 72, 0.8)), url(<%= asset_path'window-chair.jpg' %>);">
+							<div class="offer-title">
+								<h3>December</h3>
+								<h2>SPECIAL OFFER</h2>
+								<P>GET 20% off</P>
+							</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisi cing elit, sed do eius mod tempor.</p>
+							<div class="btn-book-section">
+								<%= link_to "Book Now", "#", class: "btn-rooms-list-book" %>
+							</div>		
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
+<!-- <div class="container">
+	<div class="search-results-box hidden-xs">
+			<hr>
+			<div class="results-box-headers">
+				<p>Recommended accommodation</p>
+				<p><span class="color-orange"><i class="fas fa-check">&nbsp;&nbsp;</i>Best price guaranteed. Free cancelation up to 4 days</span> </p>
+			</div>
+			<% @rooms.each do |r| %>
+				<div class="search-card">
+					<%= image_tag r.room_attachments.first.photo, class: "room-image" %>
+					<div class="search-card-body">
+						<h4>Double room</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+						<div class="room-details">
+								 <span class="room-capacit"><%= image_tag "people.png", id: "icon-people" %>sleeps <%= r.capacity %> </span>
+								 <span class="bed"><%= r.size %>M2</span>
+						
+						</div>
+					</div>
+					<div class="price-section">
+						<h4>$<%= number_with_precision(r.price, :precision => 2, ) %></h4>
+						
+						<%= link_to "VIEW", "#", class: "btn-search-card" %>
+					</div>
+						<%= link_to r, class: "card-link" do %>
+					  	<% end %>
+				</div>
+				
+				<hr>
+
+		 	
+		<% end %>
+
+	</div>
+	search results for mobile version
+	<div class="hidden-sm hidden-md hidden-lg">
+
+		<div class="row">
+			<div class="col-xs-12">
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<% @rooms.each do |r| %>
+				<div class="col-xs-12">
+					<%= render  "mob_card_rooms_list", room: r %>
+					<hr>
+				</div>
+				<%= link_to r, class: "card-link" do %>
+			  	<% end %>
+			<% end %>	
+		</div>
+	</div>	
+
+
+
+	<%#= link_to "https://www.google.com/", class: "card-link" do %>
+  	<%# end %>
+	
+</div> -->

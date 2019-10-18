@@ -1,0 +1,23 @@
+
+<div class="mob-search-results">
+	<div class="mob-room-image" style="background-image: url(<%=  room.room_attachments.first.photo %>);">
+	</div>
+	
+	<div class="mob-room-name"><%= room.name %></div>
+	<div class="mob-room-details">
+		 <span class="mob-room-capacit"><%= image_tag "people.png", id: "icon-people" %>sleeps <%= room.capacity %> </span>|
+		 <span class="mob-room-bed"><%= image_tag "bed.png", id: "icon-bed" %><%= room.bed %>  bed</span>|
+		 <span class="mob-room-size"><%= room.size %>&nbsp;M2</span>			
+	</div>
+	<div class="mob-price-section">
+		<h4><span class="price-per-night">
+			$<%= number_with_precision(room.price, :precision => 2, ) %>
+			
+			</span>
+		</h4>
+		<p><span class="total-price">
+		</span></p>
+	</div>
+	<%= link_to "VIEW DETAILS", room, class: "btn-search-card" %>
+</div>
+

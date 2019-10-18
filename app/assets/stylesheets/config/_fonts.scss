@@ -2,9 +2,11 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Oswald:300,400,700|Roboto:300,400,700");
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
+@import url("https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700|Playfair+Display:400,700&display=swap");
+
 // Define fonts for body and headers
 $body-font:  "Open Sans", "Helvetica", "sans-serif";
-$headers-font: "Roboto", "Open Sans", "Oswald", "Permanent Marker","sans-serif", "cursive";
+$headers-font: "Roboto", "Open Sans", "Oswald", "Permanent Marker","Playfair Display","Cinzel Decorative", "serif","sans-serif", "cursive";
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {

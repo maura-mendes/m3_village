@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :accommodation, :calculator, :contact_us, :gallery]
+  skip_before_action :authenticate_user!, only: [:home, :accommodation, :calculator, :contact_us, :gallery, :rooms_list]
 
   def home
   	@rooms = Room.all
@@ -38,6 +38,12 @@ class PagesController < ApplicationController
 
   def gallery
   end
+
+  def rooms_list
+    @rooms = Room.all
+  end
+
+
   def calculator
   	
 	  	@name1 = params[:name]
