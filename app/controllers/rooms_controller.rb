@@ -35,8 +35,10 @@ class RoomsController < ApplicationController
           @children_guest = 0
         end
 
-       @nights = (@check_out_date - @check_in_date).to_i  
-       session[:passed_variable] = @bookings_params
+        @nights = (@check_out_date - @check_in_date).to_i 
+        @bookings_params = { "check_in_date" => @check_in_date, "check_out_date" => @check_out_date, "adult_guest" => @adult_guest, "children_guest" => @children_guest}
+        session[:passed_variable] = @bookings_params
+
 
         
 
