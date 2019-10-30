@@ -4,16 +4,15 @@
 		<h1 class="heading-primary">
 		<span class="main-header title-bold">Food for the soul.</span> <span class="title-light">Food made with love. </span>
 		</h1>
-		<!-- <p><span class="header-paragraph">Food made with love.</span></p> -->
+		<!-- <p>Winner of the best Restaurant in Gaza Region's Competion</p> -->
 	</div>
 </div>
 <div class="wrapper-restaurant-chef">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-5">
-				<div class="cooker-card" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= asset_path'cooker2.jpg' %>);">
-				</div>
-				
+				<div class="cooker-card" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= asset_path'cooker1.jpg' %>);">
+				</div>			
 			</div>
 			<div class="col-xs-7">
 				<div class="rest-desc-container">
@@ -21,18 +20,109 @@
 					<h3>TASTEFUL EXPERIENCES SINCE 2006</h3>
 					<p>
 						When you choose to stay at M3 VILLAGE, you are also choosing to sample some of the finest cuisine Mozambique has to offer. <br>
-
 						Drawing upon fresh seasonal ingredients and herbs from local markets, our chef creates dishes worthy of the highest standards of Mozambican cuisine. Elegant and contemporary, M3 Village's Restaurant is perfect for business lunches, romantic dinners, family meals and more. <br>
+						<!-- We are committed to provide our guests with memorable dining experiences! -->
 
-						We are committed to provide our guests with memorable dining experiences!
+					</p>
 
-					<!-- Good things happen around good food and drink, because we take the time to get to know each other and put life back into perspective. We make it easy to do that by providing a restaurant & bar that are inviting enough to make you want to unwind and share the stories of the day. Enjoy a broad selection of dishes representative of Mozambican and International cuisines, all carefully prepared by our chef, or just grab a signature cocktail, or a beer and chill. --></p>
-					<span class="chef-name"><p>Tony Mendes</p></span>
+					<%= image_tag "right-quotation-mark.svg", height: 30, class: "doube-quotes-mob" %>
+					<span class="chef-testemonial"><p>For me, cooking has always been a way of sharing. Sharing in the kitchen, certainly, but above all, sharing the table! It is precisely around this table that I want, more than ever, to attract the curiosity of my guests.</p></span>
+						
+
+						
+
+					<!-- Good things happen around good food and drink, because we take the time to get to know each other and put life back into perspective. We make it easy to do that by providing a restaurant & bar that are inviting enough to make you want to unwind and share the stories of the day. Enjoy a broad selection of dishes representative of Mozambican and International cuisines, all carefully prepared by our chef, or just grab a signature cocktail, or a beer and chill. -->
+					<span class="chef-name"><p>Alfred Cabral</p></span>
 					<span class="designation"><p>Our Chef</p></span>
-				</div>
-				
+				</div>				
 			</div>
 		</div>
+	</div>
+</div>
+<div class="wrapper-winning-award">
+	<div>
+
+		<h1><%= image_tag "star2.png", alt: "M3 Village Star"%> <%= image_tag "star2.png", alt: "M3 Village Star"%>
+			<%= image_tag "star2.png", alt: "M3 Village Star"%> 2019 Award winner for the Best Restaurant in the Region 
+			<%= image_tag "star2.png", alt: "M3 Village Star"%>
+			<%= image_tag "star2.png", alt: "M3 Village Star"%>
+			<%= image_tag "star2.png", alt: "M3 Village Star"%>
+			</h1>	
+		<!-- <div class="header-border">
+		</div>	 -->
+	</div>
+	
+		
+</div>
+<div class="wrapper-food-categories">
+	<div class="container">
+		<div class="food-categories-container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<div class="food-category-description">
+						<h2>PIZZA AND PASTAS</h2>
+						<P>Come and enjoy our delicious pizzas and pastas made from fresh and carefully selected ingredients. <br>
+						We offer a variety of options and flavors,  as well as takeaway services.
+						Every Saturday we have a fantastic pizza promotion for you: Pay for one, and choose one extra free pizza!<br>
+						We'll soon also provide pizza delivery services.
+
+						</P>
+						<div class="menu-cta">
+							<%= link_to "OUR MENU",  "#", class: "btn-our-menu" %>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<div class="food-category-img" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= asset_path'pizza.jpg' %>);">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<div class="food-category-img" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= asset_path'seafood.jpg' %>);">
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<div class="food-category-description">
+						<h2>SEAFOOD</h2>
+						<P>Mozambique is known for its wide range of delicious shellfish and seafood. At M3 Village Restaurant, seafood is the specialty of the house. <br>
+						You can choose and enjoy of fresh fish, shrimp, lobster, crab, squid and many others. Our seafood is caught daily by local fishermen on our beautiful Xai-Xai beach. 
+						</P>
+						<div class="menu-cta">
+							<%= link_to "OUR MENU",  "#", class: "btn-our-menu" %>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<div class="food-category-description">
+						<h2>FOOD OUTSIDE THE BOX!</h2>
+						<P>M3 Village Restaurant serves breakfast, lunch, dinner and all they snacks.<br>
+						You can enjoy the best of Mozambican cuisine with our unique local dishes, revisited with our Chef's personal touch in a very creative way. <br>
+	
+						We also offer a broad selection of International cuisines, all carefully prepared by our Chef.
+						</P>
+						<div class="menu-cta">
+							<%= link_to "OUR MENU",  "#", class: "btn-our-menu" %>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<div class="food-category-img" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= asset_path'prawn-curry.jpg' %>);">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+<div class="wrapper-best-seller-dish">
+	<h1>We are committed to provide our guests with memorable dining experiences!</h1>
+</div>
+<div class="wrapper-menu">
+	<div class="menu-description">
+		<h1>OUR MENU</h1>
 	</div>
 	
 </div>
