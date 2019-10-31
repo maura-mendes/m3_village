@@ -219,7 +219,7 @@
 
 .wrapper-menu{
 	background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0, 0.1) ), image-url('wood-landscape.jpeg') !important;
-	height: 100vh;
+	height: auto;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -228,13 +228,190 @@
     justify-content: space-around;
     text-align: center;
 	.menu-description{
+		padding-bottom: 30px;
+		padding-top: 30px;
 		h1{
 			font-size: 30px;
-			padding-top: 100px;
 			color: black;
-			font-family: Playfair Display;
+			font-family: Cinzel Decorative;
 			font-weight: bold;
-			text-decoration: underline;
+			// text-decoration: underline;
+		}
+		.meal-category{
+			h2{
+				font-family: Playfair Display;
+				color: #662800;
+				font-size: 25px;
+				// color: #873800;
+				// color: #662800;
+				// color: #9b4c17;
+				// color: #b74900;
+
+			}
+			ul{
+				li{
+					font-family: Roboto;
+					color: rgba(24, 24, 24, 0.8);
+					list-style: none;
+					font-size: 16px;
+					font-weight: bold;
+				}
+				.dish-description{
+					font-family: Open Sans;
+					color: rgba(24, 24, 24, 0.7);
+					font-size: 15px;
+					font-weight: 400;
+				}
+
+			}
+			hr{    
+				border-top: 1px solid #7c7c7c;
+				margin-top: 14px;
+				margin-bottom: 14px;
+			}
+		}
+		.category-space{
+			margin-top: 30px;
 		}
 	}
 }
+
+// media queries
+
+@media only screen 
+  and (max-width: 320px){
+	.banner-restaurant{
+		h1{
+			margin-top: 0;
+		}
+	}
+	.wrapper-restaurant-chef{
+		padding-top: 50px;
+		padding-bottom: 32px;
+		.cooker-card{
+			height: 300px;
+		}
+		.rest-desc-container{
+			padding-left: 0;
+			h2{
+				font-size: 21px;
+				padding-top: 0px;
+				margin-bottom: -20px;
+				text-align: center;
+			}
+			h3{
+				text-align: center;
+				font-size: 17px;
+				letter-spacing: 0;
+				margin-top: 10px;
+			}
+			p{
+				font-size: 15px;
+				letter-spacing: 0;
+				margin-top: -10px;
+				text-align: just;
+				text-align: justify;
+			}
+			img{
+				height: 18px;
+			}
+			.chef-name p{
+				font-size: 15px;
+				margin-bottom: 8px;
+				margin-top: 0;
+			}
+			.designation p{
+				font-size: 14px;
+			}
+		}
+	}
+	.wrapper-winning-award{
+		height: 340px;
+		h1{
+			font-size: 29px;
+		}
+		img{
+			width: 14px;
+		}
+	}
+	.wrapper-food-categories{
+		.food-categories-container{
+		    padding: 50px 20px;
+		    .food-category-description{
+		    	padding: 16px;
+		    	height: auto;
+		    	h2{
+		    		font-size: 18px;
+	    		    text-align: center;
+	    		    margin-bottom: -1px;
+		    	}
+		    	p{
+		    		font-size: 14px;
+		    		margin-bottom: 0px;
+		    	}
+		    	.menu-cta{
+		    		padding-top: 0px;
+		    		display: flex;
+		    		justify-content: space-around;
+		    		padding-bottom: 10px;
+		    		.btn-our-menu{
+
+		    		}
+		    	}
+		    }
+		    .food-category-img{
+		    	height: 290px;
+		    	margin-top: 36px;
+		    }
+		}
+	}
+	.wrapper-best-seller-dish{
+		height: 300px;
+		h1{
+			font-size: 23px;
+		}
+	}
+	.wrapper-menu{
+		.menu-description{
+			padding: 10px 10px;
+			h1{
+				font-size: 25px;
+			}
+			.meal-category{
+				h2{
+					font-size: 23px;
+					margin-bottom: 10px;
+				}
+				ul{
+					padding: 0px;
+					.dish-description{
+						font-size: 14px;
+						p{
+							line-height: 18px;
+						}
+					}
+				}
+				ul li{
+					font-size: 15px;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
