@@ -9,23 +9,23 @@
 						<% end %>
 						<span class= "logo-name"><p>M3 VILLAGE</p></span>
 						<span class="contact-txt"><p>Do you have any questions?<br>Feel free to contact us</p></span>
-						<span class="footer-adress"><p>Rua do Miau-Miau<br> Xai-Xai - Mozambique <br>hello@m3village.com <br>+258 82 81 77 844</p></span>
+						<span class="footer-adress"><p>Rua do Miau-Miau<br> Xai-Xai - Mozambique <br>m3restaurant.barlounge@gmail.com<br>+258 84 619 2578</p></span>
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-4">
 					<div class="links-section1">
-						<p>About us</p>
-						<p>Contacts</p>
-						<p>gallery</p>
+						<p><%= link_to "About us", root_path( :anchor => "section-about-us") %></p>
+						<p><%= link_to "Contact",  new_contact_path %> </p>
+						<p><%= link_to "Gallery",  gallery_path %></p>
 						<span class="visit-us-txt hidden-xs"><p>Come and visit us <br>Check for rooms availability</p></span>
 					</div>
 					
 				</div>
 				<div class="col-xs-12 col-sm-4">
 					<div class="links-section2">
-						<p>Restaurant & Pub</p>
-						<p>Accomodation</p>
-						<p>Rooms</p>
+						<p><%= link_to "Restaurant & Pub", restaurant_path %></p>
+						<p><%= link_to "Accomodation", accommodation_path %></p>
+						<p> <%= link_to "Rooms", rooms_list_path  %></p>
 						<span class="hidden-xs"><%= render 'shared/btn-book'  %></span>	
 					</div>
 				</div>

@@ -116,7 +116,7 @@
 			.email{
 				p{
 				font-weight: 500;
-				font-size: 22px;
+				font-size: 19px;
 				line-height: 30px;
 				letter-spacing: 0.03em;
 				color: #E9984D;
@@ -542,7 +542,7 @@
 	  			}
 	  			.email{
 	  				p{
-	  					font-size: 16px;
+	  					font-size: 12px;
 	  					margin-top: 24px;
 	  				}
 	  			}
@@ -569,6 +569,21 @@
 			}
 			.contact-details{
 				height: 339px;
+				.email{
+					p{
+						font-size: 16px;
+					}
+				}
+				.phone_number{
+					p{
+						font-size: 18px;
+						margin-top: -11px;
+					}
+				}
+				.address{
+					font-size: 19px;
+					line-height: 22px;
+				}
 			}
 		}
 	}

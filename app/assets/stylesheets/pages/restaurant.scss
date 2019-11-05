@@ -227,6 +227,7 @@
     // align-items: center;
     justify-content: space-around;
     text-align: center;
+    margin-top: 100px;
 	.menu-description{
 		padding-bottom: 30px;
 		padding-top: 30px;
@@ -274,6 +275,12 @@
 			margin-top: 30px;
 		}
 	}
+
+
+}
+
+.section-padding-top{
+	margin-top: 100px;
 }
 
 // media queries
@@ -399,6 +406,7 @@
 			}
 		}
 	}
+
 }
 
 @media only screen 
@@ -528,8 +536,60 @@
  @media only screen 
   and (min-width: 768px)
   and (max-width: 990px){
-
-  	
+  	.banner-restaurant{
+  		height: 41vh;
+  		h1{
+  			font-size: 32px;
+  		}
+  	}
+	.wrapper-restaurant-chef{
+		.cooker-card{
+			height: 496px;
+		}
+		.rest-desc-container{
+			padding-left: 0;
+			h2{
+				margin: 0;
+				margin-bottom: 12px;
+			    padding-top: 0px;
+			    font-size: 32px;
+			}
+			h3{
+				font-size: 21px;
+				margin-bottom: 6px;
+			}
+			p{
+				line-height: 1.4;
+			}
+			.chef-name p {
+				margin-top: 8px;
+			}
+		}
+	}
+	.wrapper-winning-award{
+		h1{
+			font-size: 29px;
+		}
+	}
+	
+	.wrapper-food-categories {
+		.food-categories-container {
+			.food-category-description{
+				padding: 29px;
+				h2{
+					font-size: 26px;
+				}
+			}
+		}
+	}
+	
+	.wrapper-best-seller-dish {
+		height: 417px;
+		h1{
+			font-size: 28px;
+		}
+	}
+	
   }
 
 
