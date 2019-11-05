@@ -51,14 +51,35 @@ class RoomsController < ApplicationController
   	end
 
   	def show
+
      @new_params = session[:passed_variable] 
-     
      @check_in_date = Date.parse(@new_params["check_in_date"])
      @check_out_date = Date.parse(@new_params["check_out_date"])
      @adult_guest = @new_params["adult_guest"]
      @children_guest = @new_params["children_guest"]
+      if @check_in_date.present?
+        @check_in_date = Date.parse(@new_params["check_in_date"])
+      else
+         @check_in_date = Date.today
+      end
+
+      if @check_out_date.present?
+        @check_out_date = Date.parse(@new_params["check_out_date"])
+      else
+        @check_out_date = @check_in_date + 1 
+      end
+
+      if @dult_guest.present? || @children_guest.present?
+       @adult_guest = @new_params["adult_guest"]
+         @children_guest = @new_params["children_guest"]
+      else
+        @adult_guest = 1
+        @children_guest = 0
+      end
+
      @nights = (@check_out_date - @check_in_date).to_i  
-     @total_guests = @adult_guest.to_i + @children_guest.to_i
+
+     
 
       @booking = Booking.new
   		@room = Room.find(params[:id])

@@ -4,5 +4,6 @@ import rangePlugin from "flatpickr/dist/plugins/rangePlugin"
 
 
 flatpickr(".datepicker", {
-	altInput: true
+	altInput: true,
+	altFormat: "d-m-Y"
 })
