@@ -20,8 +20,8 @@
 					<div class="search-card">
 						<%= image_tag r.room_attachments.first.photo, class: "room-image" %>
 						<div class="search-card-body">
-							<h4>Double room</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+							<h4><%= r.name %></h4>
+							<p><%= ellipsis(r.description, 250) %></p>
 							<div class="room-details">
 									 <span class="room-capacit"><%= image_tag "people.png", id: "icon-people" %>sleeps <%= r.capacity %> </span>
 									 <span class="bed"><%= r.size %>M2</span>
@@ -46,7 +46,7 @@
 			<% else %>
 				<div class="unavailability-msg">
 					<h4 class="error-msg">Sorry! There's no rooms available for these dates</h4>
-					<p>Please call the Guesthouse on +258 81 77 844 or email hello@m3village.com </p>
+					<p>Please call the Guesthouse on +258 84 619 2578 or email m3restaurant.barlounge@gmail.com </p>
 				</div>	
 			 	
 			<% end %>

@@ -15,10 +15,11 @@
 .mob-room-name{
 	font-family: Roboto;
 	margin-top: 11px;
+	margin-bottom: 6px;
     font-weight: bold;
     color: #181818;
     
-    font-size: 19px;
+    font-size: 18px;
 }
 
 .mob-room-details{
@@ -57,11 +58,11 @@
   and (min-width: 321px)
   and (max-width: 767px){
 	.mob-room-name{
-		font-size: 21px;
+		font-size: 20px;
 	}
 
 	.mob-room-details{
-		font-size: 16px;
+		font-size: 15px;
 	}
 	.price-per-night{
 		font-size: 21px;

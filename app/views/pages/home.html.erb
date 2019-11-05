@@ -4,7 +4,7 @@
 		<h1 class="heading-primary--main"><span class="title-bold">WELCOME TO</span> <span class="title-light">M3 VILLAGE</span></h1>
 		<h3 class="heading-primary--sub">XAI-XAI | MOZAMBIQUE</h3>
 		<%= link_to "ACCOMMODATION",  accommodation_path, class: "btn-banner " %>
-		<%= link_to "RESTAURANT & PUB", restaurant_path, class: "btn-banner " %>
+		<%= link_to "RESTAURANT & BAR", restaurant_path, class: "btn-banner " %>
 	</div>
 </div>
 
@@ -12,13 +12,13 @@
 	<div class="container">
 		<h4>About us</h4>
 		<hr>
-		<p>M3 Village Xai-Xai provides accommodation, restaurant and bar&pub services in Xai-Xai. The property is around 11 km from View of Gap In Reef and Xai-Xai Tourist Complex. Both free WiFi and private parking are available on site. <br>
+		<p>M3 Village Xai-Xai provides accommodation, restaurant and bar services in Xai-Xai. The property is around 11 km from View of Gap In Reef and Xai-Xai Tourist Complex. Both free WiFi and private parking are available on site. <br>
 		Xai-Xai Boat Launches is 11 km from the accommodation, while Blow hole is 12 km away. <br>
 		<br>
-		At the guest house, the rooms are equipped with a balcony, a private bathroom, air conditioning and a flat-screen TV. <br>
+		At the guest house, the rooms are equipped with a private bathroom, air conditioning and a flat-screen TV. <br>
 		<br>
 		We also have a restaurant that offers a wide variety of seafood dishes, and you can also taste delicious Mozambican typical food, as dishes of International cuisines. <br>
-		Our Bar provides you relaxed moments while having some drinks. In the weekends, you can have fun in the pub that provides you with different parties or live music nights, including Karaoke nights.
+		Our Bar provides you relaxed moments while having some drinks. In the weekends, you can have fun in the bar that provides you with live music nights.
 		 </p>	
 
 	</div>
@@ -84,11 +84,11 @@
 				<h4>Reviews</h4>
 				<div class="review-box">
 					<div class="reviews-content">
-						<%= image_tag "profile-picture.jpg", class: "avatar-lg" %>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>				
+						<%= image_tag "laura.jpg", class: "avatar-lg" %>
+						<p>The Guesthouse stay was very pleasant and comfortable. The staff was very polite and helpful, the location was very convenient for getting around and many activities. If we were to travel to Xai-Xai again, we would definitely stay there again!</p>				
 					</div>
 					<div class="rewiew-user">
-						<p class="review-username">Lea Hopkins &nbsp;&nbsp;-</p><p class="review-date">September 2018</p>		
+						<p class="review-username">Laura Johnson &nbsp;&nbsp;-</p><p class="review-date">September 2018</p>		
 					</div>		
 				</div>		 			
 			</div>
@@ -103,28 +103,14 @@
 <div class="wrapper-otherservices">
 	<div class="container">
 		<h4>Other Services</h4>
-		<hr>
-		<div class="row">
-			<div class="col-xs-6">
-				<div class="card-pub-content">
-					<h5>Pub</h5>
-					<p><span class="card-pub-description">Join the party on weekeds! Enjoy our warming nights with hosted by a local dj,live music nights with great singers or simply have fun in a Karaoke evening</span></p>	
-				</div>
-				
-			</div>
-			<div class="col-xs-6">
-				<div class="card-pub" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= asset_path'pub.jpg' %>);">
-				</div>
-				
-			</div>
-		</div>
+
 		<hr>
 		<div class="row">
 			<div class="col-xs-6">
 				<div class="card-pub-content">
 					<h5>Bar</h5>
-					<p><span class="card-pub-description">At the end of the day, we allow you to relax and take some drinks
-					just grab a signature cocktail, or a beer and chill.</span></p>	
+					<p><span class="card-pub-description">At the end of the day, we allow you to relax and take some drinks.
+					Just grab a signature cocktail, or a beer and chill.</span></p>	
 				</div>
 				
 			</div>
@@ -133,6 +119,24 @@
 				</div>	
 			</div>
 		</div>
+		<hr>
+		<div class="row">
+			<div class="col-xs-6">
+				<div class="card-pub-content">
+					<h5>Live Music</h5>
+					<p><span class="card-pub-description"> 
+					We provide you with a relaxed atmosphere on the weekends with good music and nice drinks. Join us on the weekends and enjoy our warm live music evenings hosted by great singers.
+					</span></p>	
+				</div>
+				
+			</div>
+			<div class="col-xs-6">
+				<div class="card-pub" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= asset_path'live-music.jpg' %>);">
+				</div>
+				
+			</div>
+		</div>
+		
 	</div>
 
 	<br>

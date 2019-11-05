@@ -17,11 +17,13 @@ puts "creating"
 
 
 room1 = Room.create!({
-  name: "Double Room",
+  name: "Sweet Room - Kilimajaro",
   capacity: 2,
-  size: 50,
+  size: 80,
   bed: 1,
-  price: 145,
+  price: 85, 
+  description: "This pleasant and spacious executive room is stylish and glamorous, with about 80m2 in size. It offers great conditions to make you feel like at home! The room is equipped with a private bathroom, air conditioning, flat-screen TV and 
+                many other amenities for your maximum comfort.",
   available: true
   })
 room1.room_attachments.create!(photo: "https://res.cloudinary.com/dcu9atpmg/image/upload/c_scale,w_1000/v1545314159/Room1.jpg")
@@ -39,11 +41,13 @@ room1.room_attachments.create!(photo: "https://res.cloudinary.com/dcu9atpmg/imag
  
 
 room2 = Room.create!({
-  name: "Kind size room",
+  name: "Sweet Room - Binga",
   capacity: 2,
-  size: 50,
+  size: 80,
   bed: 1,
-  price: 130,
+  price: 85,
+  description: "This pleasant and spacious executive room is stylish and glamorous, with about 80m2 in size. It offers great conditions to make you feel like at home! The room is equipped with a private bathroom, air conditioning, flat-screen TV and 
+                many other amenities for your maximum comfort.",
   available: true
 })
 room2.room_attachments.create!(photo: "https://res.cloudinary.com/dcu9atpmg/image/upload/c_scale,w_1000/v1545314182/Room2.jpg")

@@ -680,7 +680,7 @@
 				.room-card-description{
 					padding: 29px 11px 0px 11px;
 					h2{
-						font-size: 20px;
+						font-size: 19px;
 						margin-bottom: 8px;
 					}
 					p{
@@ -751,3 +751,108 @@
 		}
 	}
 }
+@media only screen 
+  and (min-width: 992px)
+  and (max-width: 1439px){
+  	.rooms-list-banner{
+  		.banner-content{
+			h1{
+				font-size: 28px;
+
+			}
+  		}
+  	} 
+  	.listing-rooms-wrapper{
+  		h3{
+  			font-size: 13px;
+  			margin-bottom: 0;
+  		}
+  		h2{
+  			font-size: 37px;
+  			margin-bottom: 15px;
+  		}
+  		.card-rooms-container{
+  			.room-card-details {
+  				.room-card-description{
+  					h2{
+						font-size: 25px;
+  					}
+  					p{
+  						line-height: px;
+
+  						.room-description{
+  							font-size: 14px;
+  						}
+  					}
+  					ul{
+  						padding-bottom: 0px;
+  						li{
+  							margin-top: 11px;
+  						}
+  					}
+  					.price-container{
+  						p{
+  							font-size: 15px;
+  							.price{
+  								font-size: 26px;
+
+  							}
+  							.price-mesurment {
+  								font-size: 10px;
+  							}
+  						}
+  					}
+  				}
+  			}
+  			hr{
+  				margin-top: 25px;
+  				margin-bottom: 18px;
+  			}
+  		} 
+  	} 
+  	.listing-rooms-wrapper {
+  		.contact-support-section{
+  			.contact-support-box{
+				h3{
+					font-size: 18px;
+				}
+				p{
+					font-size: 13px;
+					.email{
+						font-size: 12px;
+					}
+				}
+  			}
+  			.special-offers-section{
+
+	  			.special-offers-box{
+	  				p{
+	  					font-size: 13px;
+	  					margin-bottom: 19px;
+	  					margin-top: 19px;
+	  				}
+	  				.offer-title {
+	  					padding: 45px 0px;
+	  					h3{
+	  						font-size: 12px;
+	  					}
+	  					h2{
+	  						font-size: 20px;
+	  					}
+	  					p{
+	  						font-size: 15px;
+	  					}
+	  				}
+					.btn-book-section{
+						.btn-rooms-list-book{
+							font-size: 17px;
+						}	
+					} 
+	  			}
+  			}
+  		}
+  		.col-md-3{
+  			padding-left: 0;
+  		}
+  	}
+  }

@@ -30,10 +30,10 @@
 									<div class="room-card-details">
 										<div class="room-card-description">
 											<h2><%= r.name %></h2>
-											<p class="hidden-xs hidden-sm"><span class="room-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum... </span></p>
+											<p class="hidden-xs hidden-sm"><span class="room-description"><%= ellipsis(r.description, 110) %></span></p>
 											<ul >
 												<li><i class="fas fa-bed" >&nbsp;&nbsp;&nbsp;Bed:</i><span><%= r.bed %> Bed</span></li>
-												<li class="list-align-right"><i class="fa fa-arrows-alt"> &nbsp;&nbsp;&nbsp;Size:</i><span><%= r.size %>m2</span></li>
+												<li class="list-align-right"><i class="fa fa-arrows-alt"> &nbsp;&nbsp;&nbsp;Size:</i><span><%= r.size %>m2</span></li> <br class="hidden-sm hidden-md hidden-lg">
 												<li><i class="fa fa-coffee">&nbsp;&nbsp;&nbsp;Breakfast:</i> <span>Yes</span></li>
 												<li class="list-align-right"><i class="fa fa-users">&nbsp;&nbsp;&nbsp;Sleeps:</i><span><%= r.capacity %></span></li>
 											</ul>
@@ -70,11 +70,13 @@
 							<div class="offer-title">
 								<h3>December</h3>
 								<h2>SPECIAL OFFER</h2>
-								<P>GET 20% off</P>
+								<P>GET 10% off</P>
 							</div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisi cing elit, sed do eius mod tempor.</p>
+							<p>
+							Sign up as a partner company and get a 10% discount in a room's price, on every stay of your employees.
+							Contact us for more information</p>
 							<div class="btn-book-section">
-								<%= link_to "Book Now", "#", class: "btn-rooms-list-book" %>
+								<%= link_to "Contact us",  new_contact_path( :anchor => "Contact-us-form"), class: "btn-rooms-list-book" %>
 							</div>		
 						</div>
 					</div>

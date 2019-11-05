@@ -24,7 +24,7 @@
 					<div class="contact-details-mob">
 						<h4>Visit us</h4>
 						<span class="address">
-							<p>Rua do Miau-Miau</p>
+							<p>Rua do M3</p>
 							<p> Xai-Xai - Mozambique</p>
 						</span>
 						
@@ -85,13 +85,13 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-7">
-				<div class="contact-form">
+				<div class="contact-form" id="Contact-us-form">
 					<%= simple_form_for @contact do |f| %>
 						<div class="row">
-							<div class="col-sm-6 form-padding-right">	
+							<div class="col-xs-12 col-sm-6 form-padding-right">	
 								<%= f.input :first_name, as: :string, required: true, label: 'Name',  placeholder: "First name", input_html: { class: 'input-padding-right' } %>
 							</div>
-							<div class="col-sm-6 form-padding-left">
+							<div class="col-xs-12 col-sm-6 form-padding-left">
 								<%= f.input :last_name, as: :string, required: false, label_html: { class: 'invisible-label' } , placeholder: "First name", input_html: { class: 'input-padding-left' } %>
 							</div>
 						</div>
