@@ -7,7 +7,7 @@ const links = document.querySelector('.navbar-links');
   if (navbar) {
     window.addEventListener('scroll', () => {
     	
-      if (window.scrollY >= window.innerHeight) {
+      if (window.scrollY >= 200) {
         navbar.classList.add('navbar-wagon-red');
          navbar.classList.add('navbar-links2');
         ballonLogo.src = "";
