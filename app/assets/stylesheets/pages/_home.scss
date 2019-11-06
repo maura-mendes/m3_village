@@ -2,7 +2,8 @@
 // about us section
 .wrapper-aboutus{
 	background: #FFFFFF;
-	padding: 10px;
+	 padding-top: 20px;
+  padding-bottom: 50px
 	
 }
 .wrapper-aboutus h4{
@@ -25,8 +26,39 @@
 }
 
 // rooms section
+.rooms-paralax-banner{
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0, 0.2) ), image-url('pillows.jpeg') !important;
+
+}
+.wapper-paralax{
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  .header-background{
+    background-color: rgba(181, 114, 7, 0.6);
+    padding: 14px 33px;
+
+    h1{
+      color: white;
+      font-family: Playfair Display;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 58px;
+      line-height: 68px;
+      text-align: center;
+      margin: 0;
+    } 
+  }
+ 
+}
 .wrapper-rooms{
 	background: #f4f4f5;
+  padding-top: 30px;
   padding-bottom: 53px;
 }
 
@@ -42,7 +74,7 @@
 .wrapper-rooms p{
 	font-family: Open Sans;
 	font-size: 17px;
-	text-align: center;
+	text-align: justify;
 	color: rgba(24, 24, 24, 0.70);
 	letter-spacing: 0.03em;
   margin-top: 11px;
@@ -74,11 +106,15 @@
   margin-top: 0px;
  
 }
+.food-drinks-paralax-banner{
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0, 0.2) ), image-url('rest3.jpeg') !important;
+
+}
 
 .wrapper-foodrinks p{
   font-family: Open Sans;
   font-size: 17px;
-  text-align: center;
+  text-align: justify;
   color: rgba(24, 24, 24, 0.65);
   letter-spacing: 0.03em;
   margin-top: 11px;
@@ -236,8 +272,16 @@
     border-top: 1px solid #e0e0e0;
   }
 }
+.about-you-parallax-banner{
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0, 0.2) ), image-url('esplanada.jpg') !important;
 
+}
 
+.wapper-paralax{
+  position: relative;
+  background-position: center;
+  background-attachment: fixed;
+}
  
 // Media Queries
 // small mobiles
@@ -253,6 +297,16 @@
   		letter-spacing: 0.00em;
   		margin-top: -6px;
   	}
+    .wapper-paralax{
+          height: 50vh;
+      .header-background{
+        padding: 2px 33px;
+        h1{
+          font-size: 25px;
+          line-height: 50px;
+        }
+      }
+    }
   	.wrapper-rooms h4{
   		font-size: 19px;
    		margin-top: 26px;
@@ -358,6 +412,16 @@
   		letter-spacing: 0.00em;
   		margin-top: -6px;
   	}
+    .wapper-paralax{
+          height: 50vh;
+      .header-background{
+        padding: 2px 33px;
+        h1{
+          font-size: 25px;
+          line-height: 50px;
+        }
+      }
+    }
   	.wrapper-rooms h4{
   		font-size: 19px;
    		margin-top: 26px;
@@ -466,6 +530,16 @@
     	letter-spacing: 0.03em;
     	margin-top: 24px;
   	}
+    .wapper-paralax{
+          height: 50vh;
+      .header-background{
+        padding: 8px 33px;
+        h1{
+          font-size: 30px;
+          line-height: 50px;
+        }
+      }
+    }
   	.wrapper-rooms h4{
   		font-size: 26px;
     	margin-top: 46px;

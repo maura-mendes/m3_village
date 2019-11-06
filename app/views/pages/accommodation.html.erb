@@ -101,7 +101,7 @@
 	<hr>
 	<p>With a great night’s sleep, and a hot, powerful shower, we have everything you need to get out there rested, refreshed and ready for the day. Our infrastructure offers 6 rooms with private bathroom, air conditioning, a LED flat screen TV, a minibar and a wardrobe. 
 	Breakfast is also include.
-    </p>
+</p>
 	<div class="row">
 			<% @rooms.each do |r| %>
 			<div class="col-xs-12 col-sm-6">
@@ -151,6 +151,21 @@
 		<div class="row">
 			<div class="col-xs-6">
 				<div class="card-pub-content">
+					<h5>Breakfast is now the smartest meal of the day.</h5>
+					<p><span class="card-pub-description">We offer a huge variety of fresh, delicious items available every day, and you will see how breakfast is just one more way we make your stay great. We serve: large choice of bread, savory products (hams & cheeses), cereals, yogurts, jams, honey, fresh fruits, and drinks such as fruit juices, tea and coffee.</span></p>	
+				</div>
+				
+			</div>
+			<div class="col-xs-6">
+				<div class="card-pub" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= asset_path'breakfast.jpg' %>);">
+				</div>
+				
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-xs-6">
+				<div class="card-pub-content">
 					<h5>Your sleep is our priority.</h5>
 					<p><span class="card-pub-description">Sleep quality is assured with Paraíso mattresses from its Royal Organic Collection. An independent pocket spring technology and a 3D fabric knit made of organic cotton that provides a compelling delicate touch and a feeling of extreme softness and comfort will definitely ensure you maximum comfort during your stay.</span></p>	
 				</div>
@@ -172,7 +187,7 @@
 				
 			</div>
 			<div class="col-xs-6">
-				<div class="card-pub" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= asset_path'shower.jpg' %>);">
+				<div class="card-pub" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= asset_path'shower1.jpg' %>);">
 				</div>
 				
 			</div>
@@ -199,6 +214,49 @@
 	<br>
 </section>
 
+<div class="wrapper-opening-hours background-grey">
+	<div class="row">
+		<div class="col-xs-12 col-sm-4">
+			<div class="contact-info-container box-border-right">
+				<div class="inner-container">
+					<h1>Opening Hours</h1>
+					<p>From Monday to Thursdays</p>
+					<p>10h00 - 23h00</p>
+					<p>Friday & Saturday</p>
+					<p>11h00 - 0h00</p>
+				</div>
+				
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-4">
+			<div class="contact-info-container box-border-right">
+				<div class="inner-container">
+					<h1>Contact</h1>
+					<p>Address: Rua do M3</p>
+					<p>Xai-Xai - Mozambique</p>
+					<p>T: +258 84 619 2578</p>
+					<p>T: +258 86 619 2578</p>
+					<!-- <p>m3restaurant.barlounge@gmail.com</p> -->
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-4">
+			<div class="contact-info-container">
+				<div class="inner-container">
+					<h1>Reservations</h1>
+					<p><span class="email">m3restaurant.barlounge@gmail.com</span></p>
+					<div class="cta-rooms btn-margin-top">
+						<%= link_to "CONTACT US",  restaurant_path(:anchor => "menu"), class: "btn-book" %>
+					</div>
+
+					
+					<!-- <p>m3restaurant.barlounge@gmail.com</p> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
 
 
 

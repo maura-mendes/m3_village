@@ -210,6 +210,47 @@
 		font-size: 30px;
 	}
 }
+.wrapper-opening-hours{
+	background-color: white;
+	padding: 110px 23px;
+	.box-border-right{
+		border-right: 1px solid #666;
+	}
+	.contact-info-container{
+		padding: 10px 10px;
+		.inner-container{
+
+			h1{
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 22px;
+				line-height: 25px;
+				color: rgba(24, 24, 24, 0.8);
+				text-align: center;
+				margin-bottom: 20px;
+			}
+			p{
+				font-family: Roboto;
+			    font-style: normal;
+			    font-weight: normal;
+			    font-size: 15px;
+			    line-height: 1;
+			    text-align: center;
+			    color: rgba(24, 24, 24, 0.65);
+
+			}
+		}
+		.btn-margin-top{
+			padding-top: 10px;
+		}
+		
+	}
+
+}
+.background-grey{
+	background: #f4f4f5;
+}
 
 .wrapper-winning-award, .banner-restaurant, .wrapper-best-seller-dish{
 	position: relative;
@@ -227,7 +268,7 @@
     // align-items: center;
     justify-content: space-around;
     text-align: center;
-    margin-top: 100px;
+    // margin-top: 100px;
 	.menu-description{
 		padding-bottom: 30px;
 		padding-top: 30px;
@@ -280,7 +321,10 @@
 }
 
 .section-padding-top{
-	margin-top: 100px;
+	margin-top: 50px;
+}
+.section-padding-bottom{
+	margin-bottom: 100px;
 }
 
 // media queries
@@ -406,6 +450,26 @@
 			}
 		}
 	}
+	.wrapper-opening-hours{
+		padding: 10px 23px;
+		.contact-info-container{
+			padding: 16px 0px;
+			.inner-container{
+				h1{
+					margin-top: 15px;
+				}
+				p{
+					font-size: 14px;
+					line-height: 0.9;
+				}
+			}
+		}
+		.box-border-right{
+			border: none;
+			border-bottom: 1px solid #666;
+		}
+
+	}
 
 }
 
@@ -530,6 +594,26 @@
   				}
   			}
   		}
+  	}
+  	.wrapper-opening-hours{
+  		padding: 10px 23px;
+  		.contact-info-container{
+  			padding: 16px 0px;
+  			.inner-container{
+  				h1{
+  					margin-top: 15px;
+  				}
+  				p{
+  					font-size: 14px;
+  					line-height: 0.9;
+  				}
+  			}
+  		}
+  		.box-border-right{
+  			border: none;
+  			border-bottom: 1px solid #666;
+  		}
+
   	}
 }
 
