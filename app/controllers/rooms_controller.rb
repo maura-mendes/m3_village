@@ -53,10 +53,10 @@ class RoomsController < ApplicationController
   	def show
 
      @new_params = session[:passed_variable] 
-     @check_in_date = Date.parse(@new_params["check_in_date"])
-     @check_out_date = Date.parse(@new_params["check_out_date"])
-     @adult_guest = @new_params["adult_guest"]
-     @children_guest = @new_params["children_guest"]
+     # @check_in_date = Date.parse(@new_params["check_in_date"])
+     # @check_out_date = Date.parse(@new_params["check_out_date"])
+     # @adult_guest = @new_params["adult_guest"]
+     # @children_guest = @new_params["children_guest"]
       if @check_in_date.present?
         @check_in_date = Date.parse(@new_params["check_in_date"])
       else
