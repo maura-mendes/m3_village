@@ -208,7 +208,7 @@
 			font-weight: bold;
 			font-size: 28px;
 			line-height: 37px;
-			text-align: center;
+			text-align: left;
 			color: rgba(24, 24, 24, 0.8);
 		}
 		p{
@@ -406,6 +406,13 @@
   				margin-top: 0;
   			}
   		}
+  		.contact-form{
+  			form{
+  				.form-padding-left{
+  					padding-left: 15px !important;
+  				}
+  			}
+  		}
   	}
   	.wrapper-thank-you-message{
   		padding: 39px 0;
@@ -483,6 +490,13 @@
   				margin-top: 0;
   			}
   		}
+  		.contact-form{
+  			form{
+  				.form-padding-left{
+  					padding-left: 15px !important;
+  				}
+  			}
+  		}
   	}
   	.wrapper-thank-you-message{
   		padding: 39px 0;
@@ -557,6 +571,15 @@
 	.wrapper-contact-form{
 		padding-top: 0px;
 		margin-top: -36px;
+		.form-side-text{
+			h3{
+				text-align: left;
+				font-size: 26px;
+			}
+			p{
+				margin-top: 23px;
+			}
+		}
 	}
 }
 @media only screen 
