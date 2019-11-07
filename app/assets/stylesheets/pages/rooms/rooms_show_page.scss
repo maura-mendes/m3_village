@@ -11,13 +11,49 @@
 		text-transform: uppercase;
 		margin-top: 0;
 	}
+	.carrousell-container{
+		.carrousell{
+			.pictures-caroussel-desk{
+				overflow: hidden;
+				// height: 400px;
+				.main-img{
+					border: 1px solid black;
+					.big-img{
+						height: 502px;
+						background-size: cover !important;
+						background-position: center;
+					}
+				}
+				
+				.upper-img{
+					border: 1px solid black;
+					.small-img{
+						height: 250px;
+						background-size: cover !important;
+						background-position: center;
+					}
+				}
+				.down-img{
+					border: 1px solid black;
+					.small-img{
+						height: 250px;
+						background-size: cover !important;
+						background-position: center;
+					}
+				}
+				.col-sm-6{
+					padding: 0;
+				}
+			}
+		}
+	}
 }
 
 .carrousell-container{
 	margin-bottom: 40px;
 	box-shadow: 0px 4px 4px #aaaaaa;
 	.carousell{
-
+		
 	}
 	.room-description-container{
 		background: #DDDDDD;
@@ -399,6 +435,28 @@
 @media only screen 
   and (min-width: 768px)
   and (max-width: 990px){
+  	.carousel-page{
+  		.carrousell-container {
+  			.carrousell{
+  				.pictures-caroussel-desk{
+  					.main-img{
+  						height: 400px;
+  					}
+  					.upper-img{
+						.small-img{
+							height: 200px;
+						}
+  					}
+  					.down-img{
+						.small-img{
+							height: 200px;
+						}
+  					}
+  				}
+  			}
+  		}
+  	} 
+  	 
   	.carrousell-container{
   		// .carousel-inner{
   		// 	img{
@@ -456,5 +514,21 @@
   	}
   	
   }
+
+@media only screen 
+    and (min-width: 992px)
+    and (max-width: 1439px){
+    .wrapper-room-details-section{
+    	.booking-form{
+			.form{
+				padding: 29px;
+				.input-container p{
+					font-size: 17px;
+				}
+			}
+    	}
+    }
+
+}
 
 

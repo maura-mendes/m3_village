@@ -5,11 +5,61 @@
 		<%= render 'shared/search-form' %>
 	</div>
 </div>
-<div class="container carousel-page">
+<div class="container carousel-page ">
 	<h1><%= @room.name %></h1>
 	<div class="carrousell-container">
 		<div class="carrousell">
 			<%= render 'shared/carousel' %>
+			<div class="pictures-caroussel-desk hidden-xs">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="main-img">
+							<%#= link_to image_path("/assets/stake.jpg"), data: { lightbox: "example-set", title: ""}  do %>
+							<%= link_to image_path(@room_attachments.first.photo), data: { lightbox: "example-set", title: ""}  do %>
+
+							<div class="big-img" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= asset_path (@room_attachments.first.photo) %>);">
+							</div>
+							<%#= image_tag(@room_attachments.first.photo, style: "height: 400px; width: 100%")%>
+							<% end %>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="upper-img">
+							<%= link_to image_path(@room.room_attachments.second.photo), data: { lightbox: "example-set", title: ""}  do %>
+
+							<div class="small-img" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= asset_path (@room.room_attachments.second.photo) %>);">
+							</div>
+							<%#= image_tag(@room_attachments.first.photo, style: "height: 400px; width: 100%")%>
+							<% end %>
+						</div>
+						<div class="down-img">
+							<%= link_to image_path(@room.room_attachments.fourth.photo), data: { lightbox: "example-set", title: ""}  do %>
+
+							<div class="small-img" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= asset_path (@room.room_attachments.fourth.photo) %>);">
+							</div>
+							<%#= image_tag(@room_attachments.first.photo, style: "height: 400px; width: 100%")%>
+							<% end %>
+						</div>
+						<div class="">
+							<%#= link_to image_path(@room_attachments.first.photo), data: { lightbox: "example-set", title: ""}  do %>
+
+							<!-- <div class="small-img" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= asset_path (@room_attachments.first.photo) %>);">
+							</div> -->
+							<%#= image_tag(@room_attachments.first.photo, style: "height: 400px; width: 100%")%>
+							<%# end %>
+
+							<% @room_attachments.drop(1).each do |pictures| %>
+								<%= link_to image_path(pictures.photo), data: { lightbox: "example-set", title: ""} do %>
+									<div class="small-img" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= asset_path(pictures.photo) %>);">
+									</div>
+								<% end %>
+							<% end %>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			
 		</div>
 		<div class="room-description-container">
 			<div class="row">
@@ -38,6 +88,12 @@
 		</div>
 	</div>
 </div>
+
+<div class="pictures-caroussel-desk">
+	<div class="container">
+		<div class="row"></div>
+	</div>
+</div>	
 <div class="container">
 	<div class="wrapper-room-details-section">
 		<div class="row">
