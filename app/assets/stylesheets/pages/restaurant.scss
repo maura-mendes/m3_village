@@ -252,7 +252,7 @@
 	background: #f4f4f5;
 }
 
-.wrapper-winning-award, .banner-restaurant, .wrapper-best-seller-dish{
+.wrapper-winning-award, .banner-restaurant, .wrapper-best-seller-dish, .wrapper-bar-banner{
 	position: relative;
 	background-position: center;
 	background-attachment: fixed;
@@ -521,12 +521,19 @@
 					line-height: 0.9;
 				}
 			}
+			.btn-margin-top{
+				padding-top: 29px;
+				
+				.btn-padding{
+					padding: 10px 11px;
+				}
+			
+			}
 		}
 		.box-border-right{
 			border: none;
 			border-bottom: 1px solid #666;
 		}
-
 	}
 	.wrapper-bar-banner {
 		height: 47vh;
@@ -697,6 +704,14 @@
   					line-height: 0.9;
   				}
   			}
+  			.btn-margin-top{
+  				padding-top: 29px;
+  				
+  				.btn-padding{
+  					padding: 10px 11px;
+  				}
+  			
+  			}
   		}
   		.box-border-right{
   			border: none;
@@ -824,19 +839,11 @@
 		height: 40vh;
 	}
 	.wrapper-bar{
-		
-		h2{
-			
-		}
 		.drink-img{
 			height: 386px;
 			
 		}
-		.bar-description{
-			p{
-				
-			}
-		}
+		
 	}
 		
 	  
