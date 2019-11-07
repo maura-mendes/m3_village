@@ -48,7 +48,7 @@
       font-family: Playfair Display;
       font-style: normal;
       font-weight: 500;
-      font-size: 58px;
+      font-size: 48px;
       line-height: 68px;
       text-align: center;
       margin: 0;
@@ -380,7 +380,10 @@
         margin-bottom: -6px;
       }
       .card-pub-content{
-      padding-top: 0px;  
+      padding-top: 0px;
+      height: 160px;
+      overflow: auto;
+      text-overflow: ellipsis;  
       h5{
         font-size: 17px;
         margin-bottom: 0;
@@ -392,6 +395,7 @@
         letter-spacing: 0.00em;
         line-height: 1.4;
         margin-top: 0;
+
       }
     } 
   }
@@ -495,6 +499,9 @@
       }
       .card-pub-content{
         padding-top: 0px;  
+        height: 160px;
+        overflow: auto;
+        text-overflow: ellipsis;
         h5{
           font-size: 17px;
           margin-bottom: 0;
@@ -522,7 +529,7 @@
   and (max-width: 990px){
   	.wrapper-aboutus h4{
   		font-size: 26px;
-    	margin-top: 46px;
+    	margin-top: 40px;
     	margin-bottom: 26px;
   	}
   	.wrapper-aboutus p{
@@ -560,4 +567,19 @@
 
   }
 
+
+@media only screen 
+  and (min-width: 992px)
+  and (max-width: 1439px){
+  .wapper-paralax{
+        height: 60vh;
+    .header-background{
+      padding: 12px 33px;
+      h1{
+        font-size: 40px;
+        line-height: 50px;
+      }
+    }
+  }
+}
   
