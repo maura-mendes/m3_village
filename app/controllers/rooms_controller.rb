@@ -12,6 +12,7 @@ class RoomsController < ApplicationController
        @adult_guest = @bookings_params[:adult_guest]
        @children_guest = @bookings_params[:children_guest]
 
+
        if @check_in_date.present? 
          @check_in_date = Date.parse(@bookings_params[:check_in_date]) 
           # @check_out_date = Date.parse(@bookings_params[:check_out_date]) 
@@ -26,15 +27,15 @@ class RoomsController < ApplicationController
         else
           @check_out_date = @check_in_date + 1 
         end
-
-   		  if @dult_guest.present? || @children_guest.present?
-           @adult_guest = @bookings_params[:adult_guest]
-           @children_guest = @bookings_params[:children_guest]
-        else
-          @adult_guest = 1
-          @children_guest = 0
-        end
-
+        
+   		  # if @dult_guest.present? || @children_guest.present?
+       #     @adult_guest = @bookings_params[:adult_guest]
+       #     @children_guest = @bookings_params[:children_guest]
+       #  else
+       #    @adult_guest = 1
+       #    @children_guest = 0
+       #  end
+       
         @nights = (@check_out_date - @check_in_date).to_i 
         @bookings_params = { "check_in_date" => @check_in_date, "check_out_date" => @check_out_date, "adult_guest" => @adult_guest, "children_guest" => @children_guest}
         session[:passed_variable] = @bookings_params
@@ -53,10 +54,11 @@ class RoomsController < ApplicationController
   	def show
 
      @new_params = session[:passed_variable] 
-     # @check_in_date = Date.parse(@new_params["check_in_date"])
-     # @check_out_date = Date.parse(@new_params["check_out_date"])
-     # @adult_guest = @new_params["adult_guest"]
-     # @children_guest = @new_params["children_guest"]
+     @check_in_date = Date.parse(@new_params["check_in_date"])
+     @check_out_date = Date.parse(@new_params["check_out_date"])
+     @adult_guest = @new_params["adult_guest"]
+     @children_guest = @new_params["children_guest"]
+     # raise
       if @check_in_date.present?
         @check_in_date = Date.parse(@new_params["check_in_date"])
       else
