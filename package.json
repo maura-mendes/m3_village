@@ -6,7 +6,7 @@
     "bootstrap": "3",
     "flatpickr": "^4.6.0",
     "gmaps": "^0.4.24",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "lightbox2": "^2.11.1"
   },
   "devDependencies": {
